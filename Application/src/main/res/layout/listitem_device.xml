@@ -20,14 +20,14 @@
     <TextView android:id="@+id/device_name"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:textSize="24dp"/>
+            android:textSize="24dp" />
     <TextView android:id="@+id/device_address"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:textSize="12dp"/>
+            android:textSize="12dp" />
     <TextView android:id="@+id/device_battery"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:textSize="12dp"/>
+        android:textSize="12dp" />
 
 </LinearLayout>

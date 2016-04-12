@@ -24,6 +24,8 @@ import android.bluetooth.BluetoothManager;
 import android.content.Context;
 import android.content.Intent;
 import android.content.pm.PackageManager;
+import android.graphics.Color;
+import android.net.Uri;
 import android.os.Bundle;
 import android.os.Handler;
 import android.util.Log;
@@ -36,6 +38,10 @@ import android.widget.BaseAdapter;
 import android.widget.ListView;
 import android.widget.TextView;
 import android.widget.Toast;
+
+import com.google.android.gms.appindexing.Action;
+import com.google.android.gms.appindexing.AppIndex;
+import com.google.android.gms.common.api.GoogleApiClient;
 
 import java.util.ArrayList;
 import java.util.HashMap;
@@ -53,6 +59,11 @@ public class DeviceScanActivity extends ListActivity {
     private static final int REQUEST_ENABLE_BT = 1;
     // Stops scanning after 10 seconds.
     private static final long SCAN_PERIOD = 10000;
+    /**
+     * ATTENTION: This was auto-generated to implement the App Indexing API.
+     * See https://g.co/AppIndexing/AndroidStudio for more information.
+     */
+    private GoogleApiClient client;
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
@@ -79,6 +90,9 @@ public class DeviceScanActivity extends ListActivity {
             finish();
             return;
         }
+        // ATTENTION: This was auto-generated to implement the App Indexing API.
+        // See https://g.co/AppIndexing/AndroidStudio for more information.
+        client = new GoogleApiClient.Builder(this).addApi(AppIndex.API).build();
     }
 
     @Override
@@ -182,6 +196,46 @@ public class DeviceScanActivity extends ListActivity {
         invalidateOptionsMenu();
     }
 
+    @Override
+    public void onStart() {
+        super.onStart();
+
+        // ATTENTION: This was auto-generated to implement the App Indexing API.
+        // See https://g.co/AppIndexing/AndroidStudio for more information.
+        client.connect();
+        Action viewAction = Action.newAction(
+                Action.TYPE_VIEW, // TODO: choose an action type.
+                "DeviceScan Page", // TODO: Define a title for the content shown.
+                // TODO: If you have web page content that matches this app activity's content,
+                // make sure this auto-generated web page URL is correct.
+                // Otherwise, set the URL to null.
+                Uri.parse("http://host/path"),
+                // TODO: Make sure this auto-generated app URL is correct.
+                Uri.parse("android-app://com.example.android.bluetoothlegatt/http/host/path")
+        );
+        AppIndex.AppIndexApi.start(client, viewAction);
+    }
+
+    @Override
+    public void onStop() {
+        super.onStop();
+
+        // ATTENTION: This was auto-generated to implement the App Indexing API.
+        // See https://g.co/AppIndexing/AndroidStudio for more information.
+        Action viewAction = Action.newAction(
+                Action.TYPE_VIEW, // TODO: choose an action type.
+                "DeviceScan Page", // TODO: Define a title for the content shown.
+                // TODO: If you have web page content that matches this app activity's content,
+                // make sure this auto-generated web page URL is correct.
+                // Otherwise, set the URL to null.
+                Uri.parse("http://host/path"),
+                // TODO: Make sure this auto-generated app URL is correct.
+                Uri.parse("android-app://com.example.android.bluetoothlegatt/http/host/path")
+        );
+        AppIndex.AppIndexApi.end(client, viewAction);
+        client.disconnect();
+    }
+
     // Adapter for holding devices found through scanning.
     private class LeDeviceListAdapter extends BaseAdapter {
         private ArrayList<BluetoothDevice> mLeDevices;
@@ -194,7 +248,7 @@ public class DeviceScanActivity extends ListActivity {
         }
 
         public void addDevice(BluetoothDevice device) {
-            if(!mLeDevices.contains(device)) {
+            if (!mLeDevices.contains(device)) {
                 mLeDevices.add(device);
             }
         }
@@ -245,8 +299,22 @@ public class DeviceScanActivity extends ListActivity {
             else
                 viewHolder.deviceName.setText(R.string.unknown_device);
             viewHolder.deviceAddress.setText(device.getAddress());
-            //TODO from here , add battery state.
             viewHolder.deviceBattery.setText("battery: " + batteryState.get(device.getAddress()) + "%");
+
+            int colorBattery = 11184810; // "#AAAAAA". color code for battery state.
+            int batteryStateInt;
+            batteryStateInt = Integer.parseInt(batteryState.get(device.getAddress()));
+            if (batteryStateInt > 75) {
+                colorBattery = Color.parseColor("#99CC00");
+            } else if (batteryStateInt > 50)
+                colorBattery = Color.parseColor("#FFBB33"); // The yellow state
+            else if (batteryStateInt > 25)
+                colorBattery = Color.parseColor("#FF4444"); // The light red state
+            else
+                colorBattery = Color.parseColor("#CC0000"); // The hell red state
+            viewHolder.deviceAddress.setBackgroundColor(colorBattery);
+            viewHolder.deviceName.setBackgroundColor(colorBattery);
+            viewHolder.deviceBattery.setBackgroundColor(colorBattery);
             return view;
         }
     }
@@ -259,38 +327,38 @@ public class DeviceScanActivity extends ListActivity {
     private BluetoothAdapter.LeScanCallback mLeScanCallback =
             new BluetoothAdapter.LeScanCallback() {
 
-        @Override
-        public void onLeScan(final BluetoothDevice device, int rssi, byte[] scanRecord) {
-            if (scanRecord != null && scanRecord.length > 0) {
+                @Override
+                public void onLeScan(final BluetoothDevice device, int rssi, byte[] scanRecord) {
+                    if (scanRecord != null && scanRecord.length > 0) {
 //                final StringBuilder stringBuilder = new StringBuilder(scanRecord.length);
 //                for(byte byteChar : scanRecord)
 //                    stringBuilder.append(String.format("%02X ", byteChar));
 //                Log.d(TAG, "String from BluetoothLeService.java to sent now: \n" + new String(scanRecord) + "\n" + stringBuilder.toString());
-                for(int k = 0; k < scanRecord.length; k++){
-                    //"0B" is "AD Length", "16" is "AD Type", scanRecord[k+5] is the payload of the battery service.
-                    if (scanRecord[k] == 0x0B && scanRecord[k+1] == 0x16){
-                        batteryStateRaw = scanRecord[k+5];
-                        batteryState.put(device.getAddress(),String.valueOf(batteryStateRaw)); // push a "key, value" paar into Map batteryState.
+                        for (int k = 0; k < scanRecord.length; k++) {
+                            //"0B" is "AD Length", "16" is "AD Type", scanRecord[k+5] is the payload of the battery service.
+                            if (scanRecord[k] == 0x0B && scanRecord[k + 1] == 0x16) {
+                                batteryStateRaw = scanRecord[k + 5];
+                                batteryState.put(device.getAddress(), String.valueOf(batteryStateRaw)); // push a "key, value" paar into Map batteryState.
 //                        Log.d(TAG, "battery: " + batteryState); // Battery state of the targeted device.
 //                        Log.d(TAG, "rssi: " + rssi);     // The signal strength read by the targeted device.
 //                        Log.d(TAG, "device: " + device); // The Mac address of the bluetooth device
-                        // device.battery() = batteryState; // (Pseudo code)
-                    }
-                }
+                                // device.battery() = batteryState; // (Pseudo code)
+                            }
+                        }
 //                ViewHolder viewHolder = new ViewHolder();
 //                viewHolder.deviceBattery = (TextView) /*view*/getWindow().getCurrentFocus().findViewById(R.id.device_battery); // Add battery feature on screen.
 //                BluetoothDevice device = mLeDevices.get(i);
 //                viewHolder.deviceBattery.setText(batteryState); //TODO from here , add battery state.
-            }
-            runOnUiThread(new Runnable() {
-                @Override
-                public void run() {
-                    mLeDeviceListAdapter.addDevice(device);
-                    mLeDeviceListAdapter.notifyDataSetChanged();
+                    }
+                    runOnUiThread(new Runnable() {
+                        @Override
+                        public void run() {
+                            mLeDeviceListAdapter.addDevice(device);
+                            mLeDeviceListAdapter.notifyDataSetChanged();
+                        }
+                    });
                 }
-            });
-        }
-    };
+            };
 
     static class ViewHolder {
         TextView deviceName;
