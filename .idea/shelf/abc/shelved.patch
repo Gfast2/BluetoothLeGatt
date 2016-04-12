@@ -1,0 +1,234 @@
+Index: .idea/workspace.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- .idea/workspace.xml	(date 1459872037000)
++++ .idea/workspace.xml	(revision )
+@@ -11,7 +11,6 @@
+   <component name="ChangeListManager">
+     <list default="true" id="12f270b2-9134-4f53-9ddf-ed6004ee4c6b" name="Default" comment="">
+       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Application/Application.iml" afterPath="$PROJECT_DIR$/Application/Application.iml" />
+     </list>
+     <ignored path="BluetoothLeGatt.iws" />
+     <ignored path=".idea/workspace.xml" />
+@@ -44,8 +43,8 @@
+       <file leaf-file-name="BluetoothLeService.java" pinned="false" current-in-tab="true">
+         <entry file="file://$PROJECT_DIR$/Application/src/main/java/com/example/android/bluetoothlegatt/BluetoothLeService.java">
+           <provider selected="true" editor-type-id="text-editor">
+-            <state vertical-scroll-proportion="0.34503633">
+-              <caret line="51" column="52" selection-start-line="51" selection-start-column="52" selection-end-line="51" selection-end-column="52" />
++            <state vertical-scroll-proportion="0.42857143">
++              <caret line="53" column="49" selection-start-line="53" selection-start-column="49" selection-end-line="53" selection-end-column="49" />
+               <folding />
+             </state>
+           </provider>
+@@ -103,6 +102,7 @@
+     </leaf>
+   </component>
+   <component name="Git.Settings">
++    <option name="ROOT_SYNC" value="SYNC" />
+     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+   </component>
+   <component name="GradleLocalSettings">
+@@ -1395,7 +1395,7 @@
+     <ConfirmationsSetting value="0" id="Remove" />
+   </component>
+   <component name="ProjectView">
+-    <navigator currentView="AndroidView" proportions="" version="1">
++    <navigator currentView="Scope" currentSubView="Project Files" proportions="" version="1">
+       <flattenPackages />
+       <showMembers />
+       <showModules />
+@@ -1417,12 +1417,85 @@
+               <option name="myItemId" value="BluetoothLeGatt" />
+               <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidViewProjectNode" />
+             </PATH_ELEMENT>
++            <PATH_ELEMENT>
++              <option name="myItemId" value="Gradle Scripts" />
++              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidBuildScriptsGroupNode" />
++            </PATH_ELEMENT>
+           </PATH>
++          <PATH>
++            <PATH_ELEMENT>
++              <option name="myItemId" value="BluetoothLeGatt" />
++              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidViewProjectNode" />
++            </PATH_ELEMENT>
++            <PATH_ELEMENT>
++              <option name="myItemId" value="Application" />
++              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidModuleNode" />
++            </PATH_ELEMENT>
++          </PATH>
+         </subPane>
+       </pane>
+       <pane id="PackagesPane" />
+       <pane id="ProjectPane" />
+-      <pane id="Scope" />
++      <pane id="Scope">
++        <subPane subId="Project Files">
++          <PATH>
++            <PATH_ELEMENT USER_OBJECT="Root">
++              <option name="myItemId" value="" />
++              <option name="myItemType" value="" />
++            </PATH_ELEMENT>
++          </PATH>
++          <PATH>
++            <PATH_ELEMENT USER_OBJECT="Root">
++              <option name="myItemId" value="" />
++              <option name="myItemType" value="" />
++            </PATH_ELEMENT>
++            <PATH_ELEMENT USER_OBJECT="Application">
++              <option name="myItemId" value="" />
++              <option name="myItemType" value="" />
++            </PATH_ELEMENT>
++            <PATH_ELEMENT USER_OBJECT="Application">
++              <option name="myItemId" value="" />
++              <option name="myItemType" value="" />
++            </PATH_ELEMENT>
++          </PATH>
++          <PATH>
++            <PATH_ELEMENT USER_OBJECT="Root">
++              <option name="myItemId" value="" />
++              <option name="myItemType" value="" />
++            </PATH_ELEMENT>
++            <PATH_ELEMENT USER_OBJECT="Application">
++              <option name="myItemId" value="" />
++              <option name="myItemType" value="" />
++            </PATH_ELEMENT>
++            <PATH_ELEMENT USER_OBJECT="Application">
++              <option name="myItemId" value="" />
++              <option name="myItemType" value="" />
++            </PATH_ELEMENT>
++            <PATH_ELEMENT USER_OBJECT="src/main">
++              <option name="myItemId" value="" />
++              <option name="myItemType" value="" />
++            </PATH_ELEMENT>
++          </PATH>
++          <PATH>
++            <PATH_ELEMENT USER_OBJECT="Root">
++              <option name="myItemId" value="" />
++              <option name="myItemType" value="" />
++            </PATH_ELEMENT>
++            <PATH_ELEMENT USER_OBJECT="Application">
++              <option name="myItemId" value="" />
++              <option name="myItemType" value="" />
++            </PATH_ELEMENT>
++            <PATH_ELEMENT USER_OBJECT="Application">
++              <option name="myItemId" value="" />
++              <option name="myItemType" value="" />
++            </PATH_ELEMENT>
++            <PATH_ELEMENT USER_OBJECT="build">
++              <option name="myItemId" value="" />
++              <option name="myItemType" value="" />
++            </PATH_ELEMENT>
++          </PATH>
++        </subPane>
++      </pane>
+     </panes>
+   </component>
+   <component name="PropertiesComponent">
+@@ -1723,33 +1796,33 @@
+   </component>
+   <component name="ToolWindowManager">
+     <frame x="-254" y="-1177" width="1920" height="1177" extended-state="6" />
+-    <editor active="false" />
++    <editor active="true" />
+     <layout>
+       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2808671" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
++      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2808671" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+       <window_info id="Android Model" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
+       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+       <window_info id="Android Monitor" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.43732327" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+       <window_info id="Captures" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
++      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
+       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+       <window_info id="Gradle Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.19509897" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
++      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.19509897" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+       <window_info id="Build Variants" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
++      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32987747" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+       <window_info id="Gradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.18636848" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+-      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
++      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32987747" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32987747" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+     </layout>
+@@ -1834,16 +1907,21 @@
+         <state />
+       </provider>
+     </entry>
+-    <entry file="file://$PROJECT_DIR$/Application/src/main/res/layout/listitem_device.xml">
+-      <provider editor-type-id="text-editor">
++    <entry file="file://$PROJECT_DIR$/Application/src/main/java/com/example/android/bluetoothlegatt/BluetoothLeService.java">
++      <provider selected="true" editor-type-id="text-editor">
++        <state vertical-scroll-proportion="0.42857143">
++          <caret line="53" column="49" selection-start-line="53" selection-start-column="49" selection-end-line="53" selection-end-column="49" />
++          <folding />
++        </state>
++      </provider>
++    </entry>
++    <entry file="file://$PROJECT_DIR$/Application/src/main/java/com/example/android/bluetoothlegatt/DeviceControlActivity.java">
++      <provider selected="true" editor-type-id="text-editor">
+         <state vertical-scroll-proportion="0.0">
+-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
++          <caret line="267" column="74" selection-start-line="267" selection-start-column="70" selection-end-line="267" selection-end-column="74" />
+           <folding />
+         </state>
+       </provider>
+-      <provider selected="true" editor-type-id="android-designer">
+-        <state />
+-      </provider>
+     </entry>
+     <entry file="file://$PROJECT_DIR$/Application/src/main/res/layout/gatt_services_characteristics.xml">
+       <provider editor-type-id="text-editor">
+@@ -1856,7 +1934,7 @@
+         <state />
+       </provider>
+     </entry>
+-    <entry file="file://$PROJECT_DIR$/Application/src/main/res/layout/button_control.xml">
++    <entry file="file://$PROJECT_DIR$/Application/src/main/res/layout/listitem_device.xml">
+       <provider editor-type-id="text-editor">
+         <state vertical-scroll-proportion="0.0">
+           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+@@ -1867,20 +1945,15 @@
+         <state />
+       </provider>
+     </entry>
+-    <entry file="file://$PROJECT_DIR$/Application/src/main/java/com/example/android/bluetoothlegatt/DeviceControlActivity.java">
+-      <provider selected="true" editor-type-id="text-editor">
++    <entry file="file://$PROJECT_DIR$/Application/src/main/res/layout/button_control.xml">
++      <provider editor-type-id="text-editor">
+         <state vertical-scroll-proportion="0.0">
+-          <caret line="267" column="74" selection-start-line="267" selection-start-column="70" selection-end-line="267" selection-end-column="74" />
++          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+           <folding />
+         </state>
+       </provider>
+-    </entry>
+-    <entry file="file://$PROJECT_DIR$/Application/src/main/java/com/example/android/bluetoothlegatt/BluetoothLeService.java">
+-      <provider selected="true" editor-type-id="text-editor">
+-        <state vertical-scroll-proportion="0.34503633">
+-          <caret line="51" column="52" selection-start-line="51" selection-start-column="52" selection-end-line="51" selection-end-column="52" />
+-          <folding />
+-        </state>
++      <provider selected="true" editor-type-id="android-designer">
++        <state />
+       </provider>
+     </entry>
+   </component>
+\ No newline at end of file
