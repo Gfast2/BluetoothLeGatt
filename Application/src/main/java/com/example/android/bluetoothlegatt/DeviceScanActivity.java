@@ -44,6 +44,9 @@ import com.google.android.gms.appindexing.AppIndex;
 import com.google.android.gms.common.api.GoogleApiClient;
 
 import java.util.ArrayList;
+import java.util.Collection;
+import java.util.Collections;
+import java.util.Comparator;
 import java.util.HashMap;
 import java.util.Map;
 
@@ -236,6 +239,8 @@ public class DeviceScanActivity extends ListActivity {
         client.disconnect();
     }
 
+    private final static String TAG = DeviceControlActivity.class.getSimpleName();
+
     // Adapter for holding devices found through scanning.
     private class LeDeviceListAdapter extends BaseAdapter {
         private ArrayList<BluetoothDevice> mLeDevices;
@@ -249,7 +254,25 @@ public class DeviceScanActivity extends ListActivity {
 
         public void addDevice(BluetoothDevice device) {
             if (!mLeDevices.contains(device)) {
-                mLeDevices.add(device);
+                mLeDevices.add(device); // uncomment to add new device without sorting.
+//
+//                // when each time there is new beacon comes in, resort the list. Use the "bobble up style"
+//                String batteryStateS;
+//                batteryStateS = batteryState.get(device.getAddress());
+//                int batteryStateInt = Integer.parseInt(batteryStateS); // get battery state of new coming device.
+//                Log.d(TAG, "find new item! " + device.toString() + " Battery:" + batteryStateS); // find a issue. When I do sorting here. "!mLeDevices.contains(device)" won't work anymore.
+//
+//
+//                if (mLeDevices.size() > 0) { // If there is more than two items. (Then it make sense to start sorting.)
+//                    /*for (int m = 0; m < mLeDevices.size(); m++) {
+//                        if (batteryStateInt <= Integer.parseInt(batteryState.get(mLeDevices.get(m).getAddress()))) { // if the new coming beacon have less battery then the fist listed beacon.
+//                            mLeDevices.add(m, device);
+//                        }
+//                    }*/
+//                    mLeDevices.add(device);
+//                } else {
+//                    mLeDevices.add(device); // if there is nothing in the list.
+//                }
             }
         }
 
@@ -275,7 +298,6 @@ public class DeviceScanActivity extends ListActivity {
         public long getItemId(int i) {
             return i;
         }
-
 
         @Override
         public View getView(int i, View view, ViewGroup viewGroup) {
@@ -305,7 +327,7 @@ public class DeviceScanActivity extends ListActivity {
             int batteryStateInt;
             batteryStateInt = Integer.parseInt(batteryState.get(device.getAddress()));
             if (batteryStateInt > 75) {
-                colorBattery = Color.parseColor("#99CC00");
+                colorBattery = Color.parseColor("#99CC00"); // The green state
             } else if (batteryStateInt > 50)
                 colorBattery = Color.parseColor("#FFBB33"); // The yellow state
             else if (batteryStateInt > 25)
@@ -319,7 +341,6 @@ public class DeviceScanActivity extends ListActivity {
         }
     }
 
-    private final static String TAG = DeviceControlActivity.class.getSimpleName();
     int batteryStateRaw = 0; // Battery state of the Beacon.
     Map<String, String> batteryState = new HashMap<String, String>(); // Map to save battery state.
 
@@ -345,10 +366,6 @@ public class DeviceScanActivity extends ListActivity {
                                 // device.battery() = batteryState; // (Pseudo code)
                             }
                         }
-//                ViewHolder viewHolder = new ViewHolder();
-//                viewHolder.deviceBattery = (TextView) /*view*/getWindow().getCurrentFocus().findViewById(R.id.device_battery); // Add battery feature on screen.
-//                BluetoothDevice device = mLeDevices.get(i);
-//                viewHolder.deviceBattery.setText(batteryState); //TODO from here , add battery state.
                     }
                     runOnUiThread(new Runnable() {
                         @Override
