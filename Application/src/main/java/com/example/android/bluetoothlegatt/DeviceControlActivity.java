@@ -106,7 +106,7 @@ public class DeviceControlActivity extends Activity {
                 clearUI();
             } else if (BluetoothLeService.ACTION_GATT_SERVICES_DISCOVERED.equals(action)) {
                 // Show all the supported services and characteristics on the user interface.
-                //displayGattServices(mBluetoothLeService.getSupportedGattServices());
+                displayGattServices(mBluetoothLeService.getSupportedGattServices());
             } else if (BluetoothLeService.ACTION_DATA_AVAILABLE.equals(action)) {
                 displayData(intent.getStringExtra(BluetoothLeService.EXTRA_DATA));
                 Log.d(TAG, "there is extra info to display");
@@ -233,7 +233,7 @@ public class DeviceControlActivity extends Activity {
         runOnUiThread(new Runnable() {
             @Override
             public void run() {
-                //mConnectionState.setText(resourceId);
+                mConnectionState.setText(resourceId);
             }
         });
     }
