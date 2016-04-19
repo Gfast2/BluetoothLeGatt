@@ -40,7 +40,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Bestätigen"
-            android:id="@+id/enter"
+            android:id="@+id/advert_enter"
             android:layout_gravity="center_horizontal"
             android:layout_marginLeft="@dimen/margin_large"
             android:layout_marginRight="@dimen/margin_large"
@@ -51,12 +51,12 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Abbrechen"
-            android:id="@+id/cancel"
+            android:id="@+id/advert_cancel"
             android:layout_gravity="center_horizontal"
             android:layout_marginLeft="@dimen/margin_large"
             android:layout_marginRight="@dimen/margin_large"
             android:layout_centerVertical="true"
-            android:layout_toEndOf="@+id/enter" />
+            android:layout_toEndOf="@+id/advert_enter" />
     </RelativeLayout>
 
 

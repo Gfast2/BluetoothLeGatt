@@ -69,6 +69,19 @@
         <activity
             android:name="com.example.android.bluetoothlegatt.beacon_property"
             android:label="@string/title_activity_beacon_property" />
+        <activity android:name="com.example.android.bluetoothlegatt.char_majorminor_Activity" />
+        <activity
+            android:name="com.example.android.bluetoothlegatt.char_uuid_Activity"
+            android:label="@string/title_activity_char_uuid_" />
+        <activity
+            android:name="com.example.android.bluetoothlegatt.char_mepower_Activity"
+            android:label="@string/title_activity_char_mepower_" />
+        <activity
+            android:name="com.example.android.bluetoothlegatt.char_txpower_Activity"
+            android:label="@string/title_activity_char_txpower_" />
+        <activity
+            android:name="com.example.android.bluetoothlegatt.char_deploy_Activity"
+            android:label="@string/title_activity_char_deploy_" />
     </application>
 
 </manifest>

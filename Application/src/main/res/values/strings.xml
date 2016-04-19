@@ -33,4 +33,8 @@
     <string name="menu_scan">Scan</string>
     <string name="menu_stop">Stop</string>
     <string name="title_activity_beacon_property">beacon_property</string>
+    <string name="title_activity_char_uuid_">char_uuid_Activity</string>
+    <string name="title_activity_char_mepower_">char_mepower_Activity</string>
+    <string name="title_activity_char_txpower_">char_txpower_Activity</string>
+    <string name="title_activity_char_deploy_">char_deploy_Activity</string>
 </resources>

@@ -111,6 +111,10 @@
     <string name="menu_stop">Stop</string>
     <string name="no_data">No data</string>
     <string name="title_activity_beacon_property">beacon_property</string>
+    <string name="title_activity_char_deploy_">char_deploy_Activity</string>
+    <string name="title_activity_char_mepower_">char_mepower_Activity</string>
+    <string name="title_activity_char_txpower_">char_txpower_Activity</string>
+    <string name="title_activity_char_uuid_">char_uuid_Activity</string>
     <string name="title_devices">BLE Device Scan</string>
     <string name="unknown_characteristic">Unknown characteristic</string>
     <string name="unknown_device">Unknown device</string>
