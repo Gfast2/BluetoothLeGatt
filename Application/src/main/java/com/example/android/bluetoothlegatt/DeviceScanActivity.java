@@ -325,7 +325,8 @@ public class DeviceScanActivity extends ListActivity {
 
             int colorBattery = 11184810; // "#AAAAAA". color code for battery state.
             int batteryStateInt;
-            batteryStateInt = Integer.parseInt(batteryState.get(device.getAddress()));
+//            batteryStateInt = Integer.parseInt(batteryState.get(device.getAddress()));
+            batteryStateInt = 100; // faked it inorder to let android not crazy.
             if (batteryStateInt > 75) {
                 colorBattery = Color.parseColor("#99CC00"); // The green state
             } else if (batteryStateInt > 50)

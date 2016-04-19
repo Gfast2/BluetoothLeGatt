@@ -162,15 +162,17 @@ containing a value of this type.
         public static final int common_signin_btn_text_light=0x7f07000f;
     }
     public static final class dimen {
-        public static final int cardview_compat_inset_shadow=0x7f050002;
-        public static final int cardview_default_elevation=0x7f050003;
-        public static final int cardview_default_radius=0x7f050004;
+        public static final int activity_horizontal_margin=0x7f050002;
+        public static final int activity_vertical_margin=0x7f050003;
+        public static final int cardview_compat_inset_shadow=0x7f050004;
+        public static final int cardview_default_elevation=0x7f050005;
+        public static final int cardview_default_radius=0x7f050006;
         public static final int horizontal_page_margin=0x7f050000;
-        public static final int margin_huge=0x7f050005;
-        public static final int margin_large=0x7f050006;
-        public static final int margin_medium=0x7f050007;
-        public static final int margin_small=0x7f050008;
-        public static final int margin_tiny=0x7f050009;
+        public static final int margin_huge=0x7f050007;
+        public static final int margin_large=0x7f050008;
+        public static final int margin_medium=0x7f050009;
+        public static final int margin_small=0x7f05000a;
+        public static final int margin_tiny=0x7f05000b;
         public static final int vertical_page_margin=0x7f050001;
     }
     public static final class drawable {
@@ -182,29 +184,61 @@ containing a value of this type.
     public static final class id {
         public static final int adjust_height=0x7f0a0000;
         public static final int adjust_width=0x7f0a0001;
-        public static final int button=0x7f0a0004;
-        public static final int button2=0x7f0a0003;
-        public static final int connection_state=0x7f0a0007;
-        public static final int data_value=0x7f0a0005;
-        public static final int device_address=0x7f0a0006;
-        public static final int device_battery=0x7f0a000a;
-        public static final int device_name=0x7f0a0009;
-        public static final int gatt_services_list=0x7f0a0008;
-        public static final int menu_connect=0x7f0a000c;
-        public static final int menu_disconnect=0x7f0a000d;
-        public static final int menu_refresh=0x7f0a000b;
-        public static final int menu_scan=0x7f0a000e;
-        public static final int menu_stop=0x7f0a000f;
+        public static final int button=0x7f0a0010;
+        public static final int button2=0x7f0a000f;
+        public static final int cancel=0x7f0a0016;
+        public static final int connection_state=0x7f0a001f;
+        public static final int data_value=0x7f0a0011;
+        public static final int descrip=0x7f0a000d;
+        public static final int device_address=0x7f0a001e;
+        public static final int device_battery=0x7f0a0022;
+        public static final int device_name=0x7f0a0021;
+        public static final int editText=0x7f0a0019;
+        public static final int enter=0x7f0a0015;
+        public static final int gatt_services_list=0x7f0a0020;
+        public static final int majorInput=0x7f0a001b;
+        public static final int majorVal=0x7f0a001a;
+        public static final int map=0x7f0a000c;
+        public static final int menu_connect=0x7f0a0024;
+        public static final int menu_disconnect=0x7f0a0025;
+        public static final int menu_refresh=0x7f0a0023;
+        public static final int menu_scan=0x7f0a0026;
+        public static final int menu_stop=0x7f0a0027;
+        public static final int minorInput=0x7f0a001d;
+        public static final int minorVal=0x7f0a001c;
         public static final int none=0x7f0a0002;
+        public static final int radioB1=0x7f0a0003;
+        public static final int radioB2=0x7f0a0004;
+        public static final int radioB3=0x7f0a0005;
+        public static final int radioB4=0x7f0a0006;
+        public static final int radioB6=0x7f0a0008;
+        public static final int radioB7=0x7f0a0009;
+        public static final int radioB8=0x7f0a000a;
+        public static final int radioB9=0x7f0a000b;
+        public static final int radioBAn=0x7f0a0017;
+        public static final int radioBAus=0x7f0a0018;
+        public static final int radioBHigh=0x7f0a0012;
+        public static final int radioBLow=0x7f0a0014;
+        public static final int radioBMittel=0x7f0a0013;
+        public static final int radoisB5=0x7f0a0007;
+        public static final int setting=0x7f0a000e;
     }
     public static final class integer {
         public static final int google_play_services_version=0x7f080000;
     }
     public static final class layout {
         public static final int actionbar_indeterminate_progress=0x7f030000;
-        public static final int button_control=0x7f030001;
-        public static final int gatt_services_characteristics=0x7f030002;
-        public static final int listitem_device=0x7f030003;
+        public static final int activity_char_advert=0x7f030001;
+        public static final int beacon_property=0x7f030002;
+        public static final int beacon_property2=0x7f030003;
+        public static final int button_control=0x7f030004;
+        public static final int characteristic_advertinterval=0x7f030005;
+        public static final int characteristic_broadcasting=0x7f030006;
+        public static final int characteristic_deploymode=0x7f030007;
+        public static final int characteristic_devicename=0x7f030008;
+        public static final int characteristic_majorminor=0x7f030009;
+        public static final int gatt_services_characteristics=0x7f03000a;
+        public static final int listitem_device=0x7f03000b;
     }
     public static final class menu {
         public static final int gatt_services=0x7f090000;
@@ -257,10 +291,11 @@ containing a value of this type.
         public static final int menu_scan=0x7f04002b;
         public static final int menu_stop=0x7f04002c;
         public static final int no_data=0x7f04002d;
-        public static final int title_devices=0x7f04002e;
-        public static final int unknown_characteristic=0x7f04002f;
-        public static final int unknown_device=0x7f040030;
-        public static final int unknown_service=0x7f040031;
+        public static final int title_activity_beacon_property=0x7f04002e;
+        public static final int title_devices=0x7f04002f;
+        public static final int unknown_characteristic=0x7f040030;
+        public static final int unknown_device=0x7f040031;
+        public static final int unknown_service=0x7f040032;
     }
     public static final class style {
         public static final int AppTheme=0x7f060002;

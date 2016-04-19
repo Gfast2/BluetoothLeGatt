@@ -127,6 +127,8 @@ public class DeviceControlActivity extends Activity {
                         final BluetoothGattCharacteristic characteristic =
                                 mGattCharacteristics.get(groupPosition).get(childPosition);
                         final int charaProp = characteristic.getProperties();
+                        // TODO: from here trigger another Activity, in order to let user set the
+                        // TODO: value on it accordingly.
                         // "|" bitweises "oder"
                         if ((charaProp | BluetoothGattCharacteristic.PROPERTY_READ) > 0) {
                             // If there is an active notification on a characteristic, clear
@@ -143,9 +145,9 @@ public class DeviceControlActivity extends Activity {
                             mBluetoothLeService.setCharacteristicNotification(
                                     characteristic, true);
                         }
-                        return true;
+                        return true; // if the GattCharacteristics are setten by the function.
                     }
-                    return false;
+                    return false; // if the GattCharacteristics are not available.
                 }
             };
 
@@ -253,39 +255,55 @@ public class DeviceControlActivity extends Activity {
         String uuid = null;
         String unknownServiceString = getResources().getString(R.string.unknown_service);
         String unknownCharaString = getResources().getString(R.string.unknown_characteristic);
-        ArrayList<HashMap<String, String>> gattServiceData = new ArrayList<HashMap<String, String>>();
+        ArrayList<HashMap<String, String>> gattServiceData = new ArrayList<HashMap<String, String>>(); // save the services
         ArrayList<ArrayList<HashMap<String, String>>> gattCharacteristicData
-                = new ArrayList<ArrayList<HashMap<String, String>>>();
-        mGattCharacteristics = new ArrayList<ArrayList<BluetoothGattCharacteristic>>();
+                = new ArrayList<ArrayList<HashMap<String, String>>>(); // save the characteristics.
+        mGattCharacteristics = new ArrayList<ArrayList<BluetoothGattCharacteristic>>(); // save the characteristics ?
 
         // Loops through available GATT Services.
         for (BluetoothGattService gattService : gattServices) {
             HashMap<String, String> currentServiceData = new HashMap<String, String>();
             uuid = gattService.getUuid().toString();
-            currentServiceData.put(
-                    LIST_NAME, /*SampleGattAttributes*/BeaconGattAttributes.lookup(uuid, unknownServiceString));
-            currentServiceData.put(LIST_UUID, uuid);
-            gattServiceData.add(currentServiceData);
+            if(uuid.equals("0000ffa0-0000-1000-8000-00805f9b34fb")) { //Only when its the beacon service. push this service into UI.
+                currentServiceData.put(
+                        LIST_NAME, /*SampleGattAttributes*/BeaconGattAttributes.lookup(uuid, unknownServiceString));
+                currentServiceData.put(LIST_UUID, uuid);
+                gattServiceData.add(currentServiceData);
 
-            ArrayList<HashMap<String, String>> gattCharacteristicGroupData =
-                    new ArrayList<HashMap<String, String>>();
-            List<BluetoothGattCharacteristic> gattCharacteristics =
-                    gattService.getCharacteristics();
-            ArrayList<BluetoothGattCharacteristic> charas =
-                    new ArrayList<BluetoothGattCharacteristic>();
+                ArrayList<HashMap<String, String>> gattCharacteristicGroupData =
+                        new ArrayList<HashMap<String, String>>();
+                List<BluetoothGattCharacteristic> gattCharacteristics =
+                        gattService.getCharacteristics();
+                ArrayList<BluetoothGattCharacteristic> charas =
+                        new ArrayList<BluetoothGattCharacteristic>();
 
-            // Loops through available Characteristics.
-            for (BluetoothGattCharacteristic gattCharacteristic : gattCharacteristics) {
-                charas.add(gattCharacteristic);
-                HashMap<String, String> currentCharaData = new HashMap<String, String>();
-                uuid = gattCharacteristic.getUuid().toString();
-                currentCharaData.put(
-                        LIST_NAME, /*SampleGattAttributes*/BeaconGattAttributes.lookup(uuid, unknownCharaString));
-                currentCharaData.put(LIST_UUID, uuid);
-                gattCharacteristicGroupData.add(currentCharaData);
+                // Loops through available Characteristics.
+                for (BluetoothGattCharacteristic gattCharacteristic : gattCharacteristics) {
+                    uuid = gattCharacteristic.getUuid().toString();
+                    String charaString = BeaconGattAttributes.lookup(uuid, unknownCharaString);
+                    // Only the known (not unknown) characteristics are shown.
+                    // + hard coded a characteristic filter here. (should later refactoring).
+                    if (!charaString.equals(unknownCharaString) &&
+                            !charaString.contentEquals("Auth Code") &&
+                            !charaString.contentEquals("Auth Timeout") &&
+                            !charaString.contentEquals("Pair Password") &&
+                            !charaString.contentEquals("Device ID") &&
+                            !charaString.contentEquals("Auth Timeout") &&
+                            !charaString.contentEquals("Control LED") &&
+                            !charaString.contentEquals("Advertising Blink")
+                            ){
+                        charas.add(gattCharacteristic);
+                        HashMap<String, String> currentCharaData = new HashMap<String, String>();
+//                        uuid = gattCharacteristic.getUuid().toString();
+                        currentCharaData.put(
+                            LIST_NAME, /*SampleGattAttributes*/BeaconGattAttributes.lookup(uuid, unknownCharaString));
+                        currentCharaData.put(LIST_UUID, uuid);
+                    gattCharacteristicGroupData.add(currentCharaData);
+                    }
+                }
+                mGattCharacteristics.add(charas);
+                gattCharacteristicData.add(gattCharacteristicGroupData);
             }
-            mGattCharacteristics.add(charas);
-            gattCharacteristicData.add(gattCharacteristicGroupData);
         }
 
         SimpleExpandableListAdapter gattServiceAdapter = new SimpleExpandableListAdapter(
