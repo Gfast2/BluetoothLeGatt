@@ -148,7 +148,8 @@ public class BluetoothLeService extends Service {
                 for(byte byteChar : data)
                     stringBuilder.append(String.format("%02X ", byteChar));
                 Log.d(TAG, "String from BluetoothLeService.java to sent now: " + /*new String(data) + "\n" + */stringBuilder.toString());
-                intent.putExtra(EXTRA_DATA, new String(data) + "\n" + stringBuilder.toString());
+                // only put the Hex paired raw bytes in the broadcast now.
+                intent.putExtra(EXTRA_DATA, /*new String(data) + "\n" + */stringBuilder.toString());
             }
         }
         sendBroadcast(intent);
@@ -319,6 +320,57 @@ public class BluetoothLeService extends Service {
         return mBluetoothGatt.getServices();
     }
 
+
+    /**
+     * Through the UUID try to get the reading value from the characteristics accordingly.
+     */
+    public void readCustomCharacteristic(String attribute) {
+        if (mBluetoothAdapter == null || mBluetoothGatt == null) {
+            Log.w(TAG, "BluetoothAdapter not initialized");
+            return;
+        }
+        /*check if the service is available on the device*/
+        BluetoothGattService mCustomService = mBluetoothGatt.getService(UUID.fromString("0000ffa0-0000-1000-8000-00805f9b34fb")); // This is the Service where LED control register belonge to.
+        if(mCustomService == null){
+            Log.w(TAG, "Custom BLE Service not found");
+            return;
+        }
+        /*get the read characteristic from the service*/
+        BluetoothGattCharacteristic mReadCharacteristic = mCustomService.getCharacteristic(UUID.fromString(attribute)); // characteristic uuid.
+        if(mBluetoothGatt.readCharacteristic(mReadCharacteristic) == false){
+            Log.w(TAG, "Failed to read characteristic");
+        }
+    }
+
+    public void writeCustomCharacteristic(String str, byte[] value) {
+        if (mBluetoothAdapter == null || mBluetoothGatt == null) {
+            Log.w(TAG, "BluetoothAdapter not initialized");
+            return;
+        }
+        /*check if the service is available on the device*/
+        BluetoothGattService mCustomService = mBluetoothGatt.getService(UUID.fromString("0000ffa0-0000-1000-8000-00805f9b34fb"));
+        if(mCustomService == null){
+            Log.w(TAG, "Custom BLE Service not found");
+            return;
+        }
+        /*get the read characteristic from the service*/
+        BluetoothGattCharacteristic mWriteCharacteristic = mCustomService.getCharacteristic(UUID.fromString(str)); // Advertising interval
+//        mWriteCharacteristic.setValue(value,android.bluetooth.BluetoothGattCharacteristic.FORMAT_SINT8,0);
+        mWriteCharacteristic.setValue(value); // do it the byte[] way.
+//        byte[] bytes = {0x00,0x0A,0x00,0x05};
+//        mWriteCharacteristic.setValue(bytes);
+        if(mBluetoothGatt.writeCharacteristic(mWriteCharacteristic) == false){
+            Log.w(TAG, "Failed to write characteristic");
+            Toast.makeText(getApplicationContext(), "value write not correctely!",Toast.LENGTH_SHORT).show();
+        }
+
+        // These two are used to soft restart iBeacon, in order to make change guilty.
+//        mWriteCharacteristic = mCustomService.getCharacteristic(UUID.fromString("0000ffbf-0000-1000-8000-00805f9b34fb"));
+//        mWriteCharacteristic.setValue("0x01");
+    }
+
+
+    // These two custom functions are only used for read/write Demo in old demo.
     public void readCustomCharacteristic() {
         if (mBluetoothAdapter == null || mBluetoothGatt == null) {
             Log.w(TAG, "BluetoothAdapter not initialized");
@@ -336,7 +388,6 @@ public class BluetoothLeService extends Service {
             Log.w(TAG, "Failed to read characteristic");
         }
     }
-
 
     public void writeCustomCharacteristic(int value) {
         if (mBluetoothAdapter == null || mBluetoothGatt == null) {
@@ -357,7 +408,6 @@ public class BluetoothLeService extends Service {
             Log.w(TAG, "Failed to write characteristic");
             Toast.makeText(getApplicationContext(), "value write not correctely!",Toast.LENGTH_SHORT).show();
         }
-
 
         // These two are used to soft restart iBeacon, in order to make change guilty.
         mWriteCharacteristic = mCustomService.getCharacteristic(UUID.fromString("0000ffbf-0000-1000-8000-00805f9b34fb"));

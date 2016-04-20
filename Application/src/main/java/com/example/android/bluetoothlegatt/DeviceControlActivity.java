@@ -65,6 +65,11 @@ public class DeviceControlActivity extends Activity {
     private final String LIST_NAME = "NAME";
     private final String LIST_UUID = "UUID";
 
+    public String readData = null; // buffer to save read data from BluetoothLeService.
+
+    public final static String EXTRA_READ = // value is used to pass info to setting window.
+            "com.example.controlactivity.EXTRA_READ";
+
     // Code to manage Service lifecycle.
     private final ServiceConnection mServiceConnection = new ServiceConnection() {
 
@@ -109,7 +114,7 @@ public class DeviceControlActivity extends Activity {
                 displayGattServices(mBluetoothLeService.getSupportedGattServices());
             } else if (BluetoothLeService.ACTION_DATA_AVAILABLE.equals(action)) {
                 displayData(intent.getStringExtra(BluetoothLeService.EXTRA_DATA));
-                Log.d(TAG, "there is extra info to display");
+                Log.d(TAG, "EXTRA_DATA from BluetoothLeService service to display.");
             }
         }
     };
@@ -142,45 +147,23 @@ public class DeviceControlActivity extends Activity {
                     Log.d(TAG, "onChildClick happened! ");
                     Log.d(TAG, "childPosition is:" + childPosition + " & id is:" + id);
 
+                    final BluetoothGattCharacteristic characteristic =
+                            mGattCharacteristics.get(groupPosition).get(childPosition);
+                    mBluetoothLeService.readCharacteristic(characteristic); // read the value of this characteristic right now.
                     String openClass = activityName[childPosition];
+
                     try{
                         Class selected = Class.forName(packageName + openClass);
                         Intent selectedIntent = new Intent(DeviceControlActivity.this, selected); // Wich button is pushed.
-                        startActivity(selectedIntent); // kick-off the new activity with other info.
+                        if(readData != null) { // Only when de readData is available.
+                            selectedIntent.putExtra(EXTRA_READ, readData); // put the corresponding data to the intent.
+                            Log.d(TAG, "Packed extra data in, with label EXTRA_READ");
+                        }
+                        startActivityForResult(selectedIntent, 1); // kick-off the new activity with other info.
                     } catch (ClassNotFoundException e) {
                         e.printStackTrace();
                     }
 
-
-
-
-
-                    /*
-                    if (mGattCharacteristics != null) {
-                        final BluetoothGattCharacteristic characteristic =
-                                mGattCharacteristics.get(groupPosition).get(childPosition);
-                        final int charaProp = characteristic.getProperties();
-
-                        if ((charaProp | BluetoothGattCharacteristic.PROPERTY_READ) > 0) {
-                            // If there is an active notification on a characteristic, clear
-                            // it first so it doesn't update the data field on the user interface.
-                            if (mNotifyCharacteristic != null) {
-                                mBluetoothLeService.setCharacteristicNotification(
-                                        mNotifyCharacteristic, false);
-                                mNotifyCharacteristic = null;
-                            }
-                            mBluetoothLeService.readCharacteristic(characteristic);
-                        }
-
-                        if ((charaProp | BluetoothGattCharacteristic.PROPERTY_NOTIFY) > 0) {
-                            mNotifyCharacteristic = characteristic;
-                            mBluetoothLeService.setCharacteristicNotification(
-                                    characteristic, true);
-                        }
-                        return true; // if the GattCharacteristics are setten by the function.
-                    }
-                    return false; // if the GattCharacteristics are not available.
-*/
                 return true;
                 }
 
@@ -319,6 +302,7 @@ public class DeviceControlActivity extends Activity {
     private void displayData(String data) {
         if (data != null) {
             mDataField.setText(data);
+            readData = data;
         }
     }
 
@@ -405,6 +389,31 @@ public class DeviceControlActivity extends Activity {
     }
 
 
+    @Override
+    protected void onActivityResult(int requestCode, int resultCode, Intent data) {
+        super.onActivityResult(requestCode, resultCode, data);
+        Log.d(TAG, "enter onActivityResult");
+        // Only when it's not canceled
+        if(resultCode == RESULT_OK){
+//            int intentData = data.getIntExtra("majorminor_data",0);
+            byte[] intentData = data.getByteArrayExtra("majorminor_data");
+            Log.d(TAG, "get data back:" + intentData); // get the data back
+            if(requestCode == 1){
+                // TODO : write the new setting value to iBeacon.
+                // This is set major & minor
+                mBluetoothLeService.writeCustomCharacteristic(
+                        "0000ffb1-0000-1000-8000-00805f9b34fb", intentData);
+
+
+
+
+
+
+
+            }
+        }
+
+    }
 
     // These two function are used to for the demo at the very beginning.
     public void onClickWrite(View v) {

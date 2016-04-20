@@ -193,20 +193,20 @@ containing a value of this type.
         public static final int advert_700=0x7f0a000f;
         public static final int advert_800=0x7f0a0010;
         public static final int advert_900=0x7f0a0011;
-        public static final int advert_cancel=0x7f0a0013;
-        public static final int advert_enter=0x7f0a0012;
         public static final int button=0x7f0a0007;
         public static final int button2=0x7f0a0006;
-        public static final int connection_state=0x7f0a0025;
+        public static final int connection_state=0x7f0a0026;
         public static final int data_value=0x7f0a0008;
         public static final int descrip=0x7f0a0004;
-        public static final int device_address=0x7f0a0024;
+        public static final int device_address=0x7f0a0025;
         public static final int device_battery=0x7f0a0029;
         public static final int device_name=0x7f0a0028;
         public static final int editText=0x7f0a0019;
-        public static final int gatt_services_list=0x7f0a0026;
+        public static final int gatt_services_list=0x7f0a0027;
         public static final int majorInput=0x7f0a001b;
-        public static final int majorVal=0x7f0a001a;
+        public static final int majorLabel=0x7f0a001a;
+        public static final int majorminor_cancel=0x7f0a0013;
+        public static final int majorminor_enter=0x7f0a0012;
         public static final int map=0x7f0a0003;
         public static final int menu_connect=0x7f0a002b;
         public static final int menu_disconnect=0x7f0a002c;
@@ -214,8 +214,8 @@ containing a value of this type.
         public static final int menu_scan=0x7f0a002d;
         public static final int menu_stop=0x7f0a002e;
         public static final int minorInput=0x7f0a001d;
-        public static final int minorVal=0x7f0a001c;
-        public static final int mpower=0x7f0a0027;
+        public static final int minorLabel=0x7f0a001c;
+        public static final int mpower=0x7f0a001e;
         public static final int none=0x7f0a0002;
         public static final int radioBAn=0x7f0a0017;
         public static final int radioBAus=0x7f0a0018;
@@ -223,12 +223,12 @@ containing a value of this type.
         public static final int radioBLow=0x7f0a0016;
         public static final int radioBMittel=0x7f0a0015;
         public static final int setting=0x7f0a0005;
-        public static final int txpower_cancel=0x7f0a0022;
-        public static final int txpower_enter=0x7f0a0021;
-        public static final int txpower_high=0x7f0a0020;
-        public static final int txpower_low=0x7f0a001e;
-        public static final int txpower_middle=0x7f0a001f;
-        public static final int uuid=0x7f0a0023;
+        public static final int txpower_cancel=0x7f0a0023;
+        public static final int txpower_enter=0x7f0a0022;
+        public static final int txpower_high=0x7f0a0021;
+        public static final int txpower_low=0x7f0a001f;
+        public static final int txpower_middle=0x7f0a0020;
+        public static final int uuid=0x7f0a0024;
     }
     public static final class integer {
         public static final int google_play_services_version=0x7f080000;
@@ -243,10 +243,10 @@ containing a value of this type.
         public static final int characteristic_deploymode=0x7f030006;
         public static final int characteristic_devicename=0x7f030007;
         public static final int characteristic_majorminor=0x7f030008;
-        public static final int characteristic_txpower=0x7f030009;
-        public static final int characteristic_uuid=0x7f03000a;
-        public static final int gatt_services_characteristics=0x7f03000b;
-        public static final int haracteristic_measurepower=0x7f03000c;
+        public static final int characteristic_measurepower=0x7f030009;
+        public static final int characteristic_txpower=0x7f03000a;
+        public static final int characteristic_uuid=0x7f03000b;
+        public static final int gatt_services_characteristics=0x7f03000c;
         public static final int listitem_device=0x7f03000d;
     }
     public static final class menu {
