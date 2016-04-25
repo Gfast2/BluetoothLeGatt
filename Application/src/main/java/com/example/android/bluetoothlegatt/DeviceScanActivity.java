@@ -28,6 +28,7 @@ import android.graphics.Color;
 import android.net.Uri;
 import android.os.Bundle;
 import android.os.Handler;
+import android.os.Message;
 import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.Menu;
@@ -67,6 +68,17 @@ public class DeviceScanActivity extends ListActivity {
      * See https://g.co/AppIndexing/AndroidStudio for more information.
      */
     private GoogleApiClient client;
+
+    Handler colorHandler = new Handler() {
+        @Override
+        public void handleMessage(Message msg) {
+//            super.handleMessage(msg);
+            // Do the UI job when Thread done.
+//            viewHolder.deviceAddress.setBackgroundColor(msg);
+//            viewHolder.deviceName.setBackgroundColor(msg);
+//            viewHolder.deviceBattery.setBackgroundColor(msg);
+        }
+    };
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
@@ -253,7 +265,7 @@ public class DeviceScanActivity extends ListActivity {
         }
 
         public void addDevice(BluetoothDevice device) {
-            if (!mLeDevices.contains(device)) {
+            if (!mLeDevices.contains(device)) { //TODO: do sorting when new beacon comes in.
                 mLeDevices.add(device); // uncomment to add new device without sorting.
 //
 //                // when each time there is new beacon comes in, resort the list. Use the "bobble up style"
@@ -323,10 +335,16 @@ public class DeviceScanActivity extends ListActivity {
             viewHolder.deviceAddress.setText(device.getAddress());
             viewHolder.deviceBattery.setText("battery: " + batteryState.get(device.getAddress()) + "%");
 
+
+//            Runnable r = new Runnable() {
+//                @Override
+//                public void run() {
             int colorBattery = 11184810; // "#AAAAAA". color code for battery state.
             int batteryStateInt;
-//            batteryStateInt = Integer.parseInt(batteryState.get(device.getAddress()));
+//                    batteryStateInt = Integer.parseInt(batteryState.get(device.getAddress()));
             batteryStateInt = 100; // faked it inorder to let android not crazy.
+//                    Integer.parseInt(batteryState.get(device.getAddress()));
+            batteryStateInt = batteryColor(device); //TODO: How to pass arguments "device" into this Thread
             if (batteryStateInt > 75) {
                 colorBattery = Color.parseColor("#99CC00"); // The green state
             } else if (batteryStateInt > 50)
@@ -335,12 +353,29 @@ public class DeviceScanActivity extends ListActivity {
                 colorBattery = Color.parseColor("#FF4444"); // The light red state
             else
                 colorBattery = Color.parseColor("#CC0000"); // The hell red state
-            viewHolder.deviceAddress.setBackgroundColor(colorBattery);
-            viewHolder.deviceName.setBackgroundColor(colorBattery);
-            viewHolder.deviceBattery.setBackgroundColor(colorBattery);
+
+            viewHolder.deviceAddress.setBackgroundColor(colorBattery/*msg*/);
+            viewHolder.deviceName.setBackgroundColor(colorBattery/*msg*/);
+            viewHolder.deviceBattery.setBackgroundColor(colorBattery/*msg*/);
+
+//                    colorHandler.sendEmptyMessage(0); // tell the colorHandler that this thread is done.
+//                    colorHandler.hasMessages(colorBattery); // put parsed integer color value in the message.
+//                    colorHandler.sendMessage(Message.CREATOR) //TODO: Figure out how to chunk "viewholder" and "colorBattery" into Message.
+//                }
+//            };
+//
+//            Thread batteryColor = new Thread(r);
+//            batteryColor.start();
+
+
             return view;
         }
     }
+
+    int batteryColor(BluetoothDevice dev) {
+        return Integer.parseInt(batteryState.get(dev.getAddress()));
+    }
+
 
     int batteryStateRaw = 0; // Battery state of the Beacon.
     Map<String, String> batteryState = new HashMap<String, String>(); // Map to save battery state.

@@ -70,6 +70,8 @@ public class DeviceControlActivity extends Activity {
     public final static String EXTRA_READ = // value is used to pass info to setting window.
             "com.example.controlactivity.EXTRA_READ";
 
+    public Intent selectedIntent; // Intent communicating between button click and BLE callback function
+
     // Code to manage Service lifecycle.
     private final ServiceConnection mServiceConnection = new ServiceConnection() {
 
@@ -114,6 +116,7 @@ public class DeviceControlActivity extends Activity {
                 displayGattServices(mBluetoothLeService.getSupportedGattServices());
             } else if (BluetoothLeService.ACTION_DATA_AVAILABLE.equals(action)) {
                 displayData(intent.getStringExtra(BluetoothLeService.EXTRA_DATA));
+                clickCoordinator(selectedIntent, intent.getStringExtra(BluetoothLeService.EXTRA_DATA));
                 Log.d(TAG, "EXTRA_DATA from BluetoothLeService service to display.");
             }
         }
@@ -149,25 +152,29 @@ public class DeviceControlActivity extends Activity {
 
                     final BluetoothGattCharacteristic characteristic =
                             mGattCharacteristics.get(groupPosition).get(childPosition);
-                    mBluetoothLeService.readCharacteristic(characteristic); // read the value of this characteristic right now.
-                    String openClass = activityName[childPosition];
+//                    byte[] tmp = characteristic.getValue();
+//                    Log.d(TAG, "tmp: " + tmp);
 
-                    try{
+                    //Here I trigger try to read data from BLE Service.
+                    mBluetoothLeService.readCharacteristic(characteristic); // read current value of the selected item.
+
+
+                    // TODO: Here I'll try to put them into a small method, and let BroadcastReceiver
+                    // TODO: trigger them. Namely -> startActivityFroResult(), and pass the data
+                    // TODO: from callback function to the new opened activity.
+                    String openClass = activityName[childPosition];
+                    try {
                         Class selected = Class.forName(packageName + openClass);
-                        Intent selectedIntent = new Intent(DeviceControlActivity.this, selected); // Wich button is pushed.
-                        if(readData != null) { // Only when de readData is available.
-                            selectedIntent.putExtra(EXTRA_READ, readData); // put the corresponding data to the intent.
-                            Log.d(TAG, "Packed extra data in, with label EXTRA_READ");
-                        }
-                        startActivityForResult(selectedIntent, 1); // kick-off the new activity with other info.
+                        selectedIntent = new Intent(DeviceControlActivity.this, selected); // Which button is pushed.
+//                        selectedIntent.putExtra(EXTRA_READ, "Hello"/*readData*/); // put the corresponding data to the intent.
+//                        startActivityForResult(selectedIntent, 1); // kick-off the new activity with other info.
+
                     } catch (ClassNotFoundException e) {
                         e.printStackTrace();
                     }
 
-                return true;
+                    return true;
                 }
-
-
                 /*
                 @Override
                 public boolean onChildClick(ExpandableListView parent, View v, int groupPosition,
@@ -181,8 +188,6 @@ public class DeviceControlActivity extends Activity {
 //                        Log.d(TAG, "mGattCharacteristics selected now toString() : " + characteristic.toString());
 //                        Log.d(TAG, "charaProp accordingly is: " + charaProp);
 
-                        // TODO: from here trigger another Activity, in order to let user set the
-                        // TODO: value on it accordingly.
 
                         if ((charaProp | BluetoothGattCharacteristic.PROPERTY_READ) > 0) {
                             // If there is an active notification on a characteristic, clear
@@ -205,9 +210,14 @@ public class DeviceControlActivity extends Activity {
                     return false; // if the GattCharacteristics are not available.
                 }
                 */
-
-
             }; // End of servicesListClickListner.
+
+    // Coordinate the click behavior and the callback function un-sync nature
+    private void clickCoordinator(Intent intent, String data){
+        intent.putExtra(EXTRA_READ, data);
+        startActivityForResult(intent, 1);
+    }
+
 
     private void clearUI() {
         //mGattServicesList.setAdapter((SimpleExpandableListAdapter) null);
@@ -323,7 +333,7 @@ public class DeviceControlActivity extends Activity {
         for (BluetoothGattService gattService : gattServices) {
             HashMap<String, String> currentServiceData = new HashMap<String, String>();
             uuid = gattService.getUuid().toString();
-            if(uuid.equals("0000ffa0-0000-1000-8000-00805f9b34fb")) { //Only when its the beacon service. push this service into UI.
+            if (uuid.equals("0000ffa0-0000-1000-8000-00805f9b34fb")) { //Only when its the beacon service. push this service into UI.
                 currentServiceData.put(
                         LIST_NAME, /*SampleGattAttributes*/BeaconGattAttributes.lookup(uuid, unknownServiceString));
                 currentServiceData.put(LIST_UUID, uuid);
@@ -342,22 +352,22 @@ public class DeviceControlActivity extends Activity {
                     String charaString = BeaconGattAttributes.lookup(uuid, unknownCharaString);
                     // Only the known (not unknown) characteristics are shown.
                     // + hard coded a characteristic filter here. (should later refactoring).
-                    if (!charaString.equals(unknownCharaString)     &&
+                    if (!charaString.equals(unknownCharaString) &&
                             !charaString.contentEquals("Auth Code") &&
-                            !charaString.contentEquals("Auth Timeout")  &&
+                            !charaString.contentEquals("Auth Timeout") &&
                             !charaString.contentEquals("Pair Password") &&
-                            !charaString.contentEquals("Device ID")     &&
-                            !charaString.contentEquals("Auth Timeout")  &&
-                            !charaString.contentEquals("Control LED")   &&
+                            !charaString.contentEquals("Device ID") &&
+                            !charaString.contentEquals("Auth Timeout") &&
+                            !charaString.contentEquals("Control LED") &&
                             !charaString.contentEquals("Advertising Blink")
-                            ){
+                            ) {
                         charas.add(gattCharacteristic);
                         HashMap<String, String> currentCharaData = new HashMap<String, String>();
 //                        uuid = gattCharacteristic.getUuid().toString();
                         currentCharaData.put(
-                            LIST_NAME, /*SampleGattAttributes*/BeaconGattAttributes.lookup(uuid, unknownCharaString));
+                                LIST_NAME, /*SampleGattAttributes*/BeaconGattAttributes.lookup(uuid, unknownCharaString));
                         currentCharaData.put(LIST_UUID, uuid);
-                    gattCharacteristicGroupData.add(currentCharaData);
+                        gattCharacteristicGroupData.add(currentCharaData);
                     }
                 }
                 mGattCharacteristics.add(charas);
@@ -394,20 +404,15 @@ public class DeviceControlActivity extends Activity {
         super.onActivityResult(requestCode, resultCode, data);
         Log.d(TAG, "enter onActivityResult");
         // Only when it's not canceled
-        if(resultCode == RESULT_OK){
+        if (resultCode == RESULT_OK) {
 //            int intentData = data.getIntExtra("majorminor_data",0);
             byte[] intentData = data.getByteArrayExtra("majorminor_data");
             Log.d(TAG, "get data back:" + intentData); // get the data back
-            if(requestCode == 1){
+            if (requestCode == 1) {
                 // TODO : write the new setting value to iBeacon.
                 // This is set major & minor
                 mBluetoothLeService.writeCustomCharacteristic(
                         "0000ffb1-0000-1000-8000-00805f9b34fb", intentData);
-
-
-
-
-
 
 
             }

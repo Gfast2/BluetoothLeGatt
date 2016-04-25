@@ -1,25 +1,34 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:orientation="vertical" android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
 
-    <RadioButton
-        android:layout_width="300dp"
+    <RadioGroup
+        android:id="@+id/char_advert_radioGroup"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="An"
-        android:id="@+id/radioBAn"
-        android:layout_marginLeft="@dimen/margin_large"
-        android:layout_marginTop="@dimen/margin_large"
-        android:checked="false" />
+        android:layout_marginLeft="50dp">
 
-    <RadioButton
-        android:layout_width="300dp"
-        android:layout_height="wrap_content"
-        android:text="Aus"
-        android:id="@+id/radioBAus"
-        android:layout_marginLeft="@dimen/margin_large"
-        android:layout_marginTop="@dimen/margin_large"
-        android:checked="false" />
+        <RadioButton
+            android:id="@+id/radioBAn"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/margin_large"
+            android:layout_marginTop="@dimen/margin_large"
+            android:checked="false"
+            android:text="An" />
+
+        <RadioButton
+            android:id="@+id/radioBAus"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/margin_large"
+            android:layout_marginTop="@dimen/margin_large"
+            android:checked="false"
+            android:text="Aus" />
+
+    </RadioGroup>
 
     <RelativeLayout
         android:layout_width="match_parent"
@@ -27,22 +36,22 @@
         android:layout_gravity="center_horizontal">
 
         <Button
+            android:id="@+id/measurepower_enter"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Bestätigen"
-            android:id="@+id/majorminor_enter"
-            android:layout_centerVertical="true"
             android:layout_alignParentStart="true"
-            android:layout_marginStart="40dp" />
+            android:layout_centerVertical="true"
+            android:layout_marginStart="40dp"
+            android:text="Bestätigen" />
 
         <Button
+            android:id="@+id/deploy_cancel"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Abbrechen"
-            android:id="@+id/majorminor_cancel"
-            android:layout_centerVertical="true"
             android:layout_alignParentEnd="true"
-            android:layout_marginEnd="59dp" />
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="59dp"
+            android:text="Abbrechen" />
     </RelativeLayout>
 
 </LinearLayout>
