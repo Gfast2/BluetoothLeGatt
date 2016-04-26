@@ -37,4 +37,8 @@
     <string name="title_activity_char_mepower_">char_mepower_Activity</string>
     <string name="title_activity_char_txpower_">char_txpower_Activity</string>
     <string name="title_activity_char_deploy_">char_deploy_Activity</string>
+
+    <string name="title_activity_splash">Splash</string>
+    <string name="dummy_button">Dummy Button</string>
+    <string name="dummy_content">DUMMY\nCONTENT</string>
 </resources>

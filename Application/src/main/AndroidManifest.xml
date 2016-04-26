@@ -76,7 +76,12 @@
             android:label="@string/title_activity_char_txpower_" />
         <activity
             android:name=".char_deploy_Activity"
-            android:label="@string/title_activity_char_deploy_"></activity>
+            android:label="@string/title_activity_char_deploy_" />
+        <activity
+            android:name=".Splash"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:label="@string/title_activity_splash"
+            android:theme="@style/FullscreenTheme"></activity>
     </application>
 
 </manifest>

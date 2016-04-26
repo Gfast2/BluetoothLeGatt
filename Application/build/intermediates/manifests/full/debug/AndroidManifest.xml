@@ -82,6 +82,11 @@
         <activity
             android:name="com.example.android.bluetoothlegatt.char_deploy_Activity"
             android:label="@string/title_activity_char_deploy_" />
+        <activity
+            android:name="com.example.android.bluetoothlegatt.Splash"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:label="@string/title_activity_splash"
+            android:theme="@style/FullscreenTheme" />
     </application>
 
 </manifest>

@@ -71,6 +71,7 @@ public class DeviceControlActivity extends Activity {
             "com.example.controlactivity.EXTRA_READ";
 
     public Intent selectedIntent; // Intent communicating between button click and BLE callback function
+    public int requestCode; // number of which item is selected.
 
     // Code to manage Service lifecycle.
     private final ServiceConnection mServiceConnection = new ServiceConnection() {
@@ -118,8 +119,7 @@ public class DeviceControlActivity extends Activity {
                 displayData(intent.getStringExtra(BluetoothLeService.EXTRA_DATA));
 //                clickCoordinator(selectedIntent, intent.getStringExtra(BluetoothLeService.EXTRA_DATA));
                 // Now we send byte[] to the popup window directely
-                clickCoordinator(selectedIntent, intent.getByteArrayExtra(BluetoothLeService.EXTRA_DATA2));
-
+                clickCoordinator(selectedIntent, intent.getByteArrayExtra(BluetoothLeService.EXTRA_DATA2),requestCode);
                 Log.d(TAG, "EXTRA_DATA from BluetoothLeService service to display.");
             }
         }
@@ -149,18 +149,12 @@ public class DeviceControlActivity extends Activity {
                 @Override
                 public boolean onChildClick(ExpandableListView parent, View v, int groupPosition,
                                             int childPosition, long id) {
-
-                    Log.d(TAG, "onChildClick happened! ");
-                    Log.d(TAG, "childPosition is:" + childPosition + " & id is:" + id);
-
                     final BluetoothGattCharacteristic characteristic =
                             mGattCharacteristics.get(groupPosition).get(childPosition);
 //                    byte[] tmp = characteristic.getValue();
 //                    Log.d(TAG, "tmp: " + tmp);
-
                     //Here I trigger try to read data from BLE Service.
                     mBluetoothLeService.readCharacteristic(characteristic); // read current value of the selected item.
-
 
                     // TODO: Here I'll try to put them into a small method, and let BroadcastReceiver
                     // TODO: trigger them. Namely -> startActivityFroResult(), and pass the data
@@ -169,9 +163,7 @@ public class DeviceControlActivity extends Activity {
                     try {
                         Class selected = Class.forName(packageName + openClass);
                         selectedIntent = new Intent(DeviceControlActivity.this, selected); // Which button is pushed.
-//                        selectedIntent.putExtra(EXTRA_READ, "Hello"/*readData*/); // put the corresponding data to the intent.
-//                        startActivityForResult(selectedIntent, 1); // kick-off the new activity with other info.
-
+                        requestCode = childPosition;
                     } catch (ClassNotFoundException e) {
                         e.printStackTrace();
                     }
@@ -216,9 +208,9 @@ public class DeviceControlActivity extends Activity {
             }; // End of servicesListClickListner.
 
     // Coordinate the click behavior and the callback function un-sync nature
-    private void clickCoordinator(Intent intent, byte[] data){
+    private void clickCoordinator(Intent intent, byte[] data, int requestCode) {
         intent.putExtra(EXTRA_READ, data);
-        startActivityForResult(intent, 1);
+        startActivityForResult(intent, requestCode);
     }
 
 
@@ -401,26 +393,25 @@ public class DeviceControlActivity extends Activity {
         return intentFilter;
     }
 
-
     @Override
     protected void onActivityResult(int requestCode, int resultCode, Intent data) {
-        super.onActivityResult(requestCode, resultCode, data);
+        //super.onActivityResult(requestCode, resultCode, data);
         Log.d(TAG, "enter onActivityResult");
         // Only when it's not canceled
         if (resultCode == RESULT_OK) {
 //            int intentData = data.getIntExtra("majorminor_data",0);
-            byte[] intentData = data.getByteArrayExtra("majorminor_data");
-            Log.d(TAG, "get data back:" + intentData); // get the data back
-            if (requestCode == 1) {
-                // TODO : write the new setting value to iBeacon.
-                // This is set major & minor
-                mBluetoothLeService.writeCustomCharacteristic(
+
+//            Log.d(TAG, "get data back:" + intentData); // get the data back
+            if (requestCode == 0) {
+                byte[] intentData = data.getByteArrayExtra("majorminor_data");
+                mBluetoothLeService.writeCustomCharacteristic( // This is set major & minor
                         "0000ffb1-0000-1000-8000-00805f9b34fb", intentData);
-
-
+            }
+            else if (requestCode == 1) {
+                byte[] intentData = data.getByteArrayExtra("uuid_data");
+                mBluetoothLeService.writeCustomCharacteristic("0000ffb2-0000-1000-8000-00805f9b34fb", intentData);
             }
         }
-
     }
 
     // These two function are used to for the demo at the very beginning.

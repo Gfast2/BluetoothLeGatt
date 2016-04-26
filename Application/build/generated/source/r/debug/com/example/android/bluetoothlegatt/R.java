@@ -17,7 +17,7 @@ theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
          */
-        public static final int cardBackgroundColor=0x7f010000;
+        public static final int cardBackgroundColor=0x7f010002;
         /** <p>Must be a dimension value, which is a floating point number appended with a unit such as "<code>14.5sp</code>".
 Available units are: px (pixels), dp (density-independent pixels), sp (scaled pixels based on preferred font size),
 in (inches), mm (millimeters).
@@ -27,7 +27,7 @@ theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
          */
-        public static final int cardCornerRadius=0x7f010001;
+        public static final int cardCornerRadius=0x7f010003;
         /** <p>Must be a dimension value, which is a floating point number appended with a unit such as "<code>14.5sp</code>".
 Available units are: px (pixels), dp (density-independent pixels), sp (scaled pixels based on preferred font size),
 in (inches), mm (millimeters).
@@ -37,7 +37,7 @@ theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
          */
-        public static final int cardElevation=0x7f010002;
+        public static final int cardElevation=0x7f010004;
         /** <p>Must be a dimension value, which is a floating point number appended with a unit such as "<code>14.5sp</code>".
 Available units are: px (pixels), dp (density-independent pixels), sp (scaled pixels based on preferred font size),
 in (inches), mm (millimeters).
@@ -47,7 +47,7 @@ theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
          */
-        public static final int cardMaxElevation=0x7f010003;
+        public static final int cardMaxElevation=0x7f010005;
         /** <p>Must be a boolean value, either "<code>true</code>" or "<code>false</code>".
 <p>This may also be a reference to a resource (in the form
 "<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
@@ -55,7 +55,7 @@ theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
          */
-        public static final int cardPreventCornerOverlap=0x7f010005;
+        public static final int cardPreventCornerOverlap=0x7f010007;
         /** <p>Must be a boolean value, either "<code>true</code>" or "<code>false</code>".
 <p>This may also be a reference to a resource (in the form
 "<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
@@ -63,7 +63,7 @@ theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
          */
-        public static final int cardUseCompatPadding=0x7f010004;
+        public static final int cardUseCompatPadding=0x7f010006;
         /** <p>Must be a boolean value, either "<code>true</code>" or "<code>false</code>".
 <p>This may also be a reference to a resource (in the form
 "<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
@@ -71,7 +71,7 @@ theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
          */
-        public static final int circleCrop=0x7f01000d;
+        public static final int circleCrop=0x7f01000f;
         /** <p>Must be a dimension value, which is a floating point number appended with a unit such as "<code>14.5sp</code>".
 Available units are: px (pixels), dp (density-independent pixels), sp (scaled pixels based on preferred font size),
 in (inches), mm (millimeters).
@@ -81,7 +81,7 @@ theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
          */
-        public static final int contentPadding=0x7f010006;
+        public static final int contentPadding=0x7f010008;
         /** <p>Must be a dimension value, which is a floating point number appended with a unit such as "<code>14.5sp</code>".
 Available units are: px (pixels), dp (density-independent pixels), sp (scaled pixels based on preferred font size),
 in (inches), mm (millimeters).
@@ -91,7 +91,7 @@ theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
          */
-        public static final int contentPaddingBottom=0x7f01000a;
+        public static final int contentPaddingBottom=0x7f01000c;
         /** <p>Must be a dimension value, which is a floating point number appended with a unit such as "<code>14.5sp</code>".
 Available units are: px (pixels), dp (density-independent pixels), sp (scaled pixels based on preferred font size),
 in (inches), mm (millimeters).
@@ -101,7 +101,7 @@ theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
          */
-        public static final int contentPaddingLeft=0x7f010007;
+        public static final int contentPaddingLeft=0x7f010009;
         /** <p>Must be a dimension value, which is a floating point number appended with a unit such as "<code>14.5sp</code>".
 Available units are: px (pixels), dp (density-independent pixels), sp (scaled pixels based on preferred font size),
 in (inches), mm (millimeters).
@@ -111,7 +111,7 @@ theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
          */
-        public static final int contentPaddingRight=0x7f010008;
+        public static final int contentPaddingRight=0x7f01000a;
         /** <p>Must be a dimension value, which is a floating point number appended with a unit such as "<code>14.5sp</code>".
 Available units are: px (pixels), dp (density-independent pixels), sp (scaled pixels based on preferred font size),
 in (inches), mm (millimeters).
@@ -121,7 +121,7 @@ theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
          */
-        public static final int contentPaddingTop=0x7f010009;
+        public static final int contentPaddingTop=0x7f01000b;
         /** <p>Must be a floating point value, such as "<code>1.2</code>".
 <p>This may also be a reference to a resource (in the form
 "<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
@@ -129,7 +129,7 @@ theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
          */
-        public static final int imageAspectRatio=0x7f01000c;
+        public static final int imageAspectRatio=0x7f01000e;
         /** <p>Must be one of the following constant values.</p>
 <table>
 <colgroup align="left" />
@@ -141,25 +141,34 @@ containing a value of this type.
 <tr><td><code>adjust_height</code></td><td>2</td><td></td></tr>
 </table>
          */
-        public static final int imageAspectRatioAdjust=0x7f01000b;
+        public static final int imageAspectRatioAdjust=0x7f01000d;
+        /** <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+         */
+        public static final int metaButtonBarButtonStyle=0x7f010001;
+        /** <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+         */
+        public static final int metaButtonBarStyle=0x7f010000;
     }
     public static final class color {
-        public static final int cardview_dark_background=0x7f070000;
-        public static final int cardview_light_background=0x7f070001;
-        public static final int cardview_shadow_end_color=0x7f070002;
-        public static final int cardview_shadow_start_color=0x7f070003;
-        public static final int common_action_bar_splitter=0x7f070004;
-        public static final int common_signin_btn_dark_text_default=0x7f070005;
-        public static final int common_signin_btn_dark_text_disabled=0x7f070006;
-        public static final int common_signin_btn_dark_text_focused=0x7f070007;
-        public static final int common_signin_btn_dark_text_pressed=0x7f070008;
-        public static final int common_signin_btn_default_background=0x7f070009;
-        public static final int common_signin_btn_light_text_default=0x7f07000a;
-        public static final int common_signin_btn_light_text_disabled=0x7f07000b;
-        public static final int common_signin_btn_light_text_focused=0x7f07000c;
-        public static final int common_signin_btn_light_text_pressed=0x7f07000d;
-        public static final int common_signin_btn_text_dark=0x7f07000e;
-        public static final int common_signin_btn_text_light=0x7f07000f;
+        public static final int black_overlay=0x7f070000;
+        public static final int cardview_dark_background=0x7f070001;
+        public static final int cardview_light_background=0x7f070002;
+        public static final int cardview_shadow_end_color=0x7f070003;
+        public static final int cardview_shadow_start_color=0x7f070004;
+        public static final int common_action_bar_splitter=0x7f070005;
+        public static final int common_signin_btn_dark_text_default=0x7f070006;
+        public static final int common_signin_btn_dark_text_disabled=0x7f070007;
+        public static final int common_signin_btn_dark_text_focused=0x7f070008;
+        public static final int common_signin_btn_dark_text_pressed=0x7f070009;
+        public static final int common_signin_btn_default_background=0x7f07000a;
+        public static final int common_signin_btn_light_text_default=0x7f07000b;
+        public static final int common_signin_btn_light_text_disabled=0x7f07000c;
+        public static final int common_signin_btn_light_text_focused=0x7f07000d;
+        public static final int common_signin_btn_light_text_pressed=0x7f07000e;
+        public static final int common_signin_btn_text_dark=0x7f07000f;
+        public static final int common_signin_btn_text_light=0x7f070010;
     }
     public static final class dimen {
         public static final int activity_horizontal_margin=0x7f050002;
@@ -179,79 +188,82 @@ containing a value of this type.
         public static final int common_full_open_on_phone=0x7f020000;
         public static final int common_ic_googleplayservices=0x7f020001;
         public static final int ic_launcher=0x7f020002;
-        public static final int tile=0x7f020003;
+        public static final int splash=0x7f020003;
+        public static final int tile=0x7f020004;
     }
     public static final class id {
+        public static final int Splash_imageView=0x7f0a0003;
         public static final int adjust_height=0x7f0a0000;
         public static final int adjust_width=0x7f0a0001;
-        public static final int advert_100=0x7f0a000a;
-        public static final int advert_200=0x7f0a000b;
-        public static final int advert_300=0x7f0a000c;
-        public static final int advert_400=0x7f0a000d;
-        public static final int advert_500=0x7f0a000e;
-        public static final int advert_600=0x7f0a000f;
-        public static final int advert_700=0x7f0a0010;
-        public static final int advert_800=0x7f0a0011;
-        public static final int advert_900=0x7f0a0012;
-        public static final int button=0x7f0a0007;
-        public static final int button2=0x7f0a0006;
-        public static final int char_advert_radioGroup=0x7f0a0009;
-        public static final int connection_state=0x7f0a002a;
-        public static final int data_value=0x7f0a0008;
-        public static final int deploy_cancel=0x7f0a001a;
-        public static final int descrip=0x7f0a0004;
-        public static final int device_address=0x7f0a0029;
-        public static final int device_battery=0x7f0a002d;
-        public static final int device_name=0x7f0a002c;
-        public static final int editText=0x7f0a001b;
-        public static final int gatt_services_list=0x7f0a002b;
-        public static final int majorInput=0x7f0a001d;
-        public static final int majorLabel=0x7f0a001c;
-        public static final int map=0x7f0a0003;
-        public static final int measurepower_cancel=0x7f0a0014;
-        public static final int measurepower_enter=0x7f0a0013;
-        public static final int menu_connect=0x7f0a002f;
-        public static final int menu_disconnect=0x7f0a0030;
-        public static final int menu_refresh=0x7f0a002e;
-        public static final int menu_scan=0x7f0a0031;
-        public static final int menu_stop=0x7f0a0032;
-        public static final int minorInput=0x7f0a001f;
-        public static final int minorLabel=0x7f0a001e;
-        public static final int mpower=0x7f0a0020;
+        public static final int advert_100=0x7f0a000b;
+        public static final int advert_200=0x7f0a000c;
+        public static final int advert_300=0x7f0a000d;
+        public static final int advert_400=0x7f0a000e;
+        public static final int advert_500=0x7f0a000f;
+        public static final int advert_600=0x7f0a0010;
+        public static final int advert_700=0x7f0a0011;
+        public static final int advert_800=0x7f0a0012;
+        public static final int advert_900=0x7f0a0013;
+        public static final int button=0x7f0a0008;
+        public static final int button2=0x7f0a0007;
+        public static final int char_advert_radioGroup=0x7f0a000a;
+        public static final int connection_state=0x7f0a002b;
+        public static final int data_value=0x7f0a0009;
+        public static final int deploy_cancel=0x7f0a001b;
+        public static final int descrip=0x7f0a0005;
+        public static final int device_address=0x7f0a002a;
+        public static final int device_battery=0x7f0a002e;
+        public static final int device_name=0x7f0a002d;
+        public static final int editText=0x7f0a001c;
+        public static final int gatt_services_list=0x7f0a002c;
+        public static final int majorInput=0x7f0a001e;
+        public static final int majorLabel=0x7f0a001d;
+        public static final int map=0x7f0a0004;
+        public static final int measurepower_cancel=0x7f0a0015;
+        public static final int measurepower_enter=0x7f0a0014;
+        public static final int menu_connect=0x7f0a0030;
+        public static final int menu_disconnect=0x7f0a0031;
+        public static final int menu_refresh=0x7f0a002f;
+        public static final int menu_scan=0x7f0a0032;
+        public static final int menu_stop=0x7f0a0033;
+        public static final int minorInput=0x7f0a0020;
+        public static final int minorLabel=0x7f0a001f;
+        public static final int mpower=0x7f0a0021;
         public static final int none=0x7f0a0002;
-        public static final int radioBAn=0x7f0a0018;
-        public static final int radioBAus=0x7f0a0019;
-        public static final int radioBHigh=0x7f0a0015;
-        public static final int radioBLow=0x7f0a0017;
-        public static final int radioBMittel=0x7f0a0016;
-        public static final int setting=0x7f0a0005;
-        public static final int txpower_cancel=0x7f0a0025;
-        public static final int txpower_enter=0x7f0a0024;
-        public static final int txpower_high=0x7f0a0023;
-        public static final int txpower_low=0x7f0a0021;
-        public static final int txpower_middle=0x7f0a0022;
-        public static final int uuid=0x7f0a0026;
-        public static final int uuid_cancel=0x7f0a0028;
-        public static final int uuid_enter=0x7f0a0027;
+        public static final int radioBAn=0x7f0a0019;
+        public static final int radioBAus=0x7f0a001a;
+        public static final int radioBHigh=0x7f0a0016;
+        public static final int radioBLow=0x7f0a0018;
+        public static final int radioBMittel=0x7f0a0017;
+        public static final int setting=0x7f0a0006;
+        public static final int txpower_cancel=0x7f0a0026;
+        public static final int txpower_enter=0x7f0a0025;
+        public static final int txpower_high=0x7f0a0024;
+        public static final int txpower_low=0x7f0a0022;
+        public static final int txpower_middle=0x7f0a0023;
+        public static final int uuid=0x7f0a0027;
+        public static final int uuid_cancel=0x7f0a0029;
+        public static final int uuid_enter=0x7f0a0028;
     }
     public static final class integer {
         public static final int google_play_services_version=0x7f080000;
     }
     public static final class layout {
         public static final int actionbar_indeterminate_progress=0x7f030000;
-        public static final int beacon_property=0x7f030001;
-        public static final int beacon_property2=0x7f030002;
-        public static final int button_control=0x7f030003;
-        public static final int characteristic_advertinterval=0x7f030004;
-        public static final int characteristic_broadcasting=0x7f030005;
-        public static final int characteristic_deploymode=0x7f030006;
-        public static final int characteristic_devicename=0x7f030007;
-        public static final int characteristic_majorminor=0x7f030008;
-        public static final int characteristic_measurepower=0x7f030009;
-        public static final int characteristic_txpower=0x7f03000a;
-        public static final int characteristic_uuid=0x7f03000b;
-        public static final int gatt_services_characteristics=0x7f03000c;
-        public static final int listitem_device=0x7f03000d;
+        public static final int activity_splash=0x7f030001;
+        public static final int beacon_property=0x7f030002;
+        public static final int beacon_property2=0x7f030003;
+        public static final int button_control=0x7f030004;
+        public static final int characteristic_advertinterval=0x7f030005;
+        public static final int characteristic_broadcasting=0x7f030006;
+        public static final int characteristic_deploymode=0x7f030007;
+        public static final int characteristic_devicename=0x7f030008;
+        public static final int characteristic_majorminor=0x7f030009;
+        public static final int characteristic_measurepower=0x7f03000a;
+        public static final int characteristic_txpower=0x7f03000b;
+        public static final int characteristic_uuid=0x7f03000c;
+        public static final int gatt_services_characteristics=0x7f03000d;
+        public static final int listitem_device=0x7f03000e;
     }
     public static final class menu {
         public static final int gatt_services=0x7f090000;
@@ -294,44 +306,87 @@ containing a value of this type.
         public static final int common_open_on_phone=0x7f04001d;
         public static final int connected=0x7f040022;
         public static final int disconnected=0x7f040023;
-        public static final int error_bluetooth_not_supported=0x7f040024;
-        public static final int intro_message=0x7f040025;
-        public static final int label_data=0x7f040026;
-        public static final int label_device_address=0x7f040027;
-        public static final int label_state=0x7f040028;
-        public static final int menu_connect=0x7f040029;
-        public static final int menu_disconnect=0x7f04002a;
-        public static final int menu_scan=0x7f04002b;
-        public static final int menu_stop=0x7f04002c;
-        public static final int no_data=0x7f04002d;
-        public static final int title_activity_beacon_property=0x7f04002e;
-        public static final int title_activity_char_deploy_=0x7f04002f;
-        public static final int title_activity_char_mepower_=0x7f040030;
-        public static final int title_activity_char_txpower_=0x7f040031;
-        public static final int title_activity_char_uuid_=0x7f040032;
-        public static final int title_devices=0x7f040033;
-        public static final int unknown_characteristic=0x7f040034;
-        public static final int unknown_device=0x7f040035;
-        public static final int unknown_service=0x7f040036;
+        public static final int dummy_button=0x7f040024;
+        public static final int dummy_content=0x7f040025;
+        public static final int error_bluetooth_not_supported=0x7f040026;
+        public static final int intro_message=0x7f040027;
+        public static final int label_data=0x7f040028;
+        public static final int label_device_address=0x7f040029;
+        public static final int label_state=0x7f04002a;
+        public static final int menu_connect=0x7f04002b;
+        public static final int menu_disconnect=0x7f04002c;
+        public static final int menu_scan=0x7f04002d;
+        public static final int menu_stop=0x7f04002e;
+        public static final int no_data=0x7f04002f;
+        public static final int title_activity_beacon_property=0x7f040030;
+        public static final int title_activity_char_deploy_=0x7f040031;
+        public static final int title_activity_char_mepower_=0x7f040032;
+        public static final int title_activity_char_txpower_=0x7f040033;
+        public static final int title_activity_char_uuid_=0x7f040034;
+        public static final int title_activity_splash=0x7f040035;
+        public static final int title_devices=0x7f040036;
+        public static final int unknown_characteristic=0x7f040037;
+        public static final int unknown_device=0x7f040038;
+        public static final int unknown_service=0x7f040039;
     }
     public static final class style {
-        public static final int AppTheme=0x7f060002;
-        public static final int CardView=0x7f060003;
-        public static final int CardView_Dark=0x7f060004;
-        public static final int CardView_Light=0x7f060005;
+        public static final int AppTheme=0x7f060003;
+        public static final int Base_CardView=0x7f060004;
+        public static final int CardView=0x7f060002;
+        public static final int CardView_Dark=0x7f060005;
+        public static final int CardView_Light=0x7f060006;
+        public static final int FullscreenActionBarStyle=0x7f060007;
+        public static final int FullscreenTheme=0x7f060008;
         public static final int Theme_Base=0x7f060001;
-        public static final int Theme_Sample=0x7f060006;
-        public static final int Widget=0x7f060007;
+        public static final int Theme_Sample=0x7f060009;
+        public static final int Widget=0x7f06000a;
         public static final int Widget_SampleMessage=0x7f060000;
-        public static final int Widget_SampleMessageTile=0x7f060008;
+        public static final int Widget_SampleMessageTile=0x7f06000b;
     }
     public static final class styleable {
+        /** Attributes that can be used with a ButtonBarContainerTheme.
+           <p>Includes the following attributes:</p>
+           <table>
+           <colgroup align="left" />
+           <colgroup align="left" />
+           <tr><th>Attribute</th><th>Description</th></tr>
+           <tr><td><code>{@link #ButtonBarContainerTheme_metaButtonBarButtonStyle com.example.android.bluetoothlegatt:metaButtonBarButtonStyle}</code></td><td></td></tr>
+           <tr><td><code>{@link #ButtonBarContainerTheme_metaButtonBarStyle com.example.android.bluetoothlegatt:metaButtonBarStyle}</code></td><td></td></tr>
+           </table>
+           @see #ButtonBarContainerTheme_metaButtonBarButtonStyle
+           @see #ButtonBarContainerTheme_metaButtonBarStyle
+         */
+        public static final int[] ButtonBarContainerTheme = {
+            0x7f010000, 0x7f010001
+        };
+        /**
+          <p>This symbol is the offset where the {@link com.example.android.bluetoothlegatt.R.attr#metaButtonBarButtonStyle}
+          attribute's value can be found in the {@link #ButtonBarContainerTheme} array.
+
+
+          <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+          @attr name com.example.android.bluetoothlegatt:metaButtonBarButtonStyle
+        */
+        public static final int ButtonBarContainerTheme_metaButtonBarButtonStyle = 1;
+        /**
+          <p>This symbol is the offset where the {@link com.example.android.bluetoothlegatt.R.attr#metaButtonBarStyle}
+          attribute's value can be found in the {@link #ButtonBarContainerTheme} array.
+
+
+          <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+          @attr name com.example.android.bluetoothlegatt:metaButtonBarStyle
+        */
+        public static final int ButtonBarContainerTheme_metaButtonBarStyle = 0;
         /** Attributes that can be used with a CardView.
            <p>Includes the following attributes:</p>
            <table>
            <colgroup align="left" />
            <colgroup align="left" />
            <tr><th>Attribute</th><th>Description</th></tr>
+           <tr><td><code>{@link #CardView_android_minHeight android:minHeight}</code></td><td></td></tr>
+           <tr><td><code>{@link #CardView_android_minWidth android:minWidth}</code></td><td></td></tr>
            <tr><td><code>{@link #CardView_cardBackgroundColor com.example.android.bluetoothlegatt:cardBackgroundColor}</code></td><td></td></tr>
            <tr><td><code>{@link #CardView_cardCornerRadius com.example.android.bluetoothlegatt:cardCornerRadius}</code></td><td></td></tr>
            <tr><td><code>{@link #CardView_cardElevation com.example.android.bluetoothlegatt:cardElevation}</code></td><td></td></tr>
@@ -344,6 +399,8 @@ containing a value of this type.
            <tr><td><code>{@link #CardView_contentPaddingRight com.example.android.bluetoothlegatt:contentPaddingRight}</code></td><td></td></tr>
            <tr><td><code>{@link #CardView_contentPaddingTop com.example.android.bluetoothlegatt:contentPaddingTop}</code></td><td></td></tr>
            </table>
+           @see #CardView_android_minHeight
+           @see #CardView_android_minWidth
            @see #CardView_cardBackgroundColor
            @see #CardView_cardCornerRadius
            @see #CardView_cardElevation
@@ -357,10 +414,23 @@ containing a value of this type.
            @see #CardView_contentPaddingTop
          */
         public static final int[] CardView = {
-            0x7f010000, 0x7f010001, 0x7f010002, 0x7f010003,
+            0x0101013f, 0x01010140, 0x7f010002, 0x7f010003,
             0x7f010004, 0x7f010005, 0x7f010006, 0x7f010007,
-            0x7f010008, 0x7f010009, 0x7f01000a
+            0x7f010008, 0x7f010009, 0x7f01000a, 0x7f01000b,
+            0x7f01000c
         };
+        /**
+          <p>This symbol is the offset where the {@link android.R.attr#minHeight}
+          attribute's value can be found in the {@link #CardView} array.
+          @attr name android:minHeight
+        */
+        public static final int CardView_android_minHeight = 1;
+        /**
+          <p>This symbol is the offset where the {@link android.R.attr#minWidth}
+          attribute's value can be found in the {@link #CardView} array.
+          @attr name android:minWidth
+        */
+        public static final int CardView_android_minWidth = 0;
         /**
           <p>This symbol is the offset where the {@link com.example.android.bluetoothlegatt.R.attr#cardBackgroundColor}
           attribute's value can be found in the {@link #CardView} array.
@@ -375,7 +445,7 @@ theme attribute (in the form
 containing a value of this type.
           @attr name com.example.android.bluetoothlegatt:cardBackgroundColor
         */
-        public static final int CardView_cardBackgroundColor = 0;
+        public static final int CardView_cardBackgroundColor = 2;
         /**
           <p>This symbol is the offset where the {@link com.example.android.bluetoothlegatt.R.attr#cardCornerRadius}
           attribute's value can be found in the {@link #CardView} array.
@@ -391,7 +461,7 @@ theme attribute (in the form
 containing a value of this type.
           @attr name com.example.android.bluetoothlegatt:cardCornerRadius
         */
-        public static final int CardView_cardCornerRadius = 1;
+        public static final int CardView_cardCornerRadius = 3;
         /**
           <p>This symbol is the offset where the {@link com.example.android.bluetoothlegatt.R.attr#cardElevation}
           attribute's value can be found in the {@link #CardView} array.
@@ -407,7 +477,7 @@ theme attribute (in the form
 containing a value of this type.
           @attr name com.example.android.bluetoothlegatt:cardElevation
         */
-        public static final int CardView_cardElevation = 2;
+        public static final int CardView_cardElevation = 4;
         /**
           <p>This symbol is the offset where the {@link com.example.android.bluetoothlegatt.R.attr#cardMaxElevation}
           attribute's value can be found in the {@link #CardView} array.
@@ -423,7 +493,7 @@ theme attribute (in the form
 containing a value of this type.
           @attr name com.example.android.bluetoothlegatt:cardMaxElevation
         */
-        public static final int CardView_cardMaxElevation = 3;
+        public static final int CardView_cardMaxElevation = 5;
         /**
           <p>This symbol is the offset where the {@link com.example.android.bluetoothlegatt.R.attr#cardPreventCornerOverlap}
           attribute's value can be found in the {@link #CardView} array.
@@ -437,7 +507,7 @@ theme attribute (in the form
 containing a value of this type.
           @attr name com.example.android.bluetoothlegatt:cardPreventCornerOverlap
         */
-        public static final int CardView_cardPreventCornerOverlap = 5;
+        public static final int CardView_cardPreventCornerOverlap = 7;
         /**
           <p>This symbol is the offset where the {@link com.example.android.bluetoothlegatt.R.attr#cardUseCompatPadding}
           attribute's value can be found in the {@link #CardView} array.
@@ -451,7 +521,7 @@ theme attribute (in the form
 containing a value of this type.
           @attr name com.example.android.bluetoothlegatt:cardUseCompatPadding
         */
-        public static final int CardView_cardUseCompatPadding = 4;
+        public static final int CardView_cardUseCompatPadding = 6;
         /**
           <p>This symbol is the offset where the {@link com.example.android.bluetoothlegatt.R.attr#contentPadding}
           attribute's value can be found in the {@link #CardView} array.
@@ -467,7 +537,7 @@ theme attribute (in the form
 containing a value of this type.
           @attr name com.example.android.bluetoothlegatt:contentPadding
         */
-        public static final int CardView_contentPadding = 6;
+        public static final int CardView_contentPadding = 8;
         /**
           <p>This symbol is the offset where the {@link com.example.android.bluetoothlegatt.R.attr#contentPaddingBottom}
           attribute's value can be found in the {@link #CardView} array.
@@ -483,7 +553,7 @@ theme attribute (in the form
 containing a value of this type.
           @attr name com.example.android.bluetoothlegatt:contentPaddingBottom
         */
-        public static final int CardView_contentPaddingBottom = 10;
+        public static final int CardView_contentPaddingBottom = 12;
         /**
           <p>This symbol is the offset where the {@link com.example.android.bluetoothlegatt.R.attr#contentPaddingLeft}
           attribute's value can be found in the {@link #CardView} array.
@@ -499,7 +569,7 @@ theme attribute (in the form
 containing a value of this type.
           @attr name com.example.android.bluetoothlegatt:contentPaddingLeft
         */
-        public static final int CardView_contentPaddingLeft = 7;
+        public static final int CardView_contentPaddingLeft = 9;
         /**
           <p>This symbol is the offset where the {@link com.example.android.bluetoothlegatt.R.attr#contentPaddingRight}
           attribute's value can be found in the {@link #CardView} array.
@@ -515,7 +585,7 @@ theme attribute (in the form
 containing a value of this type.
           @attr name com.example.android.bluetoothlegatt:contentPaddingRight
         */
-        public static final int CardView_contentPaddingRight = 8;
+        public static final int CardView_contentPaddingRight = 10;
         /**
           <p>This symbol is the offset where the {@link com.example.android.bluetoothlegatt.R.attr#contentPaddingTop}
           attribute's value can be found in the {@link #CardView} array.
@@ -531,7 +601,7 @@ theme attribute (in the form
 containing a value of this type.
           @attr name com.example.android.bluetoothlegatt:contentPaddingTop
         */
-        public static final int CardView_contentPaddingTop = 9;
+        public static final int CardView_contentPaddingTop = 11;
         /** Attributes that can be used with a LoadingImageView.
            <p>Includes the following attributes:</p>
            <table>
@@ -547,7 +617,7 @@ containing a value of this type.
            @see #LoadingImageView_imageAspectRatioAdjust
          */
         public static final int[] LoadingImageView = {
-            0x7f01000b, 0x7f01000c, 0x7f01000d
+            0x7f01000d, 0x7f01000e, 0x7f01000f
         };
         /**
           <p>This symbol is the offset where the {@link com.example.android.bluetoothlegatt.R.attr#circleCrop}

@@ -27,13 +27,13 @@ ADDED from AndroidManifest.xml:35:5
 		ADDED from AndroidManifest.xml:35:22
 application
 ADDED from AndroidManifest.xml:37:5
-MERGED from com.android.support:support-v4:23.0.0:22:5
-MERGED from com.android.support:support-v13:23.0.0:22:5
-MERGED from com.android.support:support-v4:23.0.0:22:5
-MERGED from com.android.support:cardview-v7:23.0.0:22:5
+MERGED from com.android.support:support-v4:23.2.1:22:5
+MERGED from com.android.support:support-v13:23.2.1:22:5
+MERGED from com.android.support:support-v4:23.2.1:22:5
+MERGED from com.android.support:cardview-v7:23.2.1:22:5
 MERGED from com.google.android.gms:play-services-appindexing:8.1.0:19:5
 MERGED from com.google.android.gms:play-services-basement:8.1.0:20:5
-MERGED from com.android.support:support-v4:23.0.0:22:5
+MERGED from com.android.support:support-v4:23.2.1:22:5
 	android:label
 		ADDED from AndroidManifest.xml:39:9
 	android:icon
@@ -111,15 +111,25 @@ ADDED from AndroidManifest.xml:77:9
 		ADDED from AndroidManifest.xml:79:13
 	android:name
 		ADDED from AndroidManifest.xml:78:13
+activity#com.example.android.bluetoothlegatt.Splash
+ADDED from AndroidManifest.xml:80:9
+	android:label
+		ADDED from AndroidManifest.xml:83:13
+	android:configChanges
+		ADDED from AndroidManifest.xml:82:13
+	android:theme
+		ADDED from AndroidManifest.xml:84:13
+	android:name
+		ADDED from AndroidManifest.xml:81:13
 uses-sdk
 INJECTED from AndroidManifest.xml:0:0 reason: use-sdk injection requested
-MERGED from com.android.support:support-v4:23.0.0:20:5
-MERGED from com.android.support:support-v13:23.0.0:20:5
-MERGED from com.android.support:support-v4:23.0.0:20:5
-MERGED from com.android.support:cardview-v7:23.0.0:20:5
+MERGED from com.android.support:support-v4:23.2.1:20:5
+MERGED from com.android.support:support-v13:23.2.1:20:5
+MERGED from com.android.support:support-v4:23.2.1:20:5
+MERGED from com.android.support:cardview-v7:23.2.1:20:5
 MERGED from com.google.android.gms:play-services-appindexing:8.1.0:18:5
 MERGED from com.google.android.gms:play-services-basement:8.1.0:18:5
-MERGED from com.android.support:support-v4:23.0.0:20:5
+MERGED from com.android.support:support-v4:23.2.1:20:5
 	android:targetSdkVersion
 		INJECTED from AndroidManifest.xml:0:0
 		INJECTED from AndroidManifest.xml:0:0
