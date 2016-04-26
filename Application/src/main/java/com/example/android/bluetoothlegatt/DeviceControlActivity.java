@@ -116,7 +116,10 @@ public class DeviceControlActivity extends Activity {
                 displayGattServices(mBluetoothLeService.getSupportedGattServices());
             } else if (BluetoothLeService.ACTION_DATA_AVAILABLE.equals(action)) {
                 displayData(intent.getStringExtra(BluetoothLeService.EXTRA_DATA));
-                clickCoordinator(selectedIntent, intent.getStringExtra(BluetoothLeService.EXTRA_DATA));
+//                clickCoordinator(selectedIntent, intent.getStringExtra(BluetoothLeService.EXTRA_DATA));
+                // Now we send byte[] to the popup window directely
+                clickCoordinator(selectedIntent, intent.getByteArrayExtra(BluetoothLeService.EXTRA_DATA2));
+
                 Log.d(TAG, "EXTRA_DATA from BluetoothLeService service to display.");
             }
         }
@@ -213,7 +216,7 @@ public class DeviceControlActivity extends Activity {
             }; // End of servicesListClickListner.
 
     // Coordinate the click behavior and the callback function un-sync nature
-    private void clickCoordinator(Intent intent, String data){
+    private void clickCoordinator(Intent intent, byte[] data){
         intent.putExtra(EXTRA_READ, data);
         startActivityForResult(intent, 1);
     }

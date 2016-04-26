@@ -63,6 +63,8 @@ public class BluetoothLeService extends Service {
             "com.example.bluetooth.le.ACTION_DATA_AVAILABLE";
     public final static String EXTRA_DATA =
             "com.example.bluetooth.le.EXTRA_DATA";
+    public final static String EXTRA_DATA2 =
+            "com.example.bluetooth.le.EXTRA_DATA2";
 
     public final static UUID UUID_HEART_RATE_MEASUREMENT =
             UUID.fromString(SampleGattAttributes.HEART_RATE_MEASUREMENT);
@@ -150,6 +152,7 @@ public class BluetoothLeService extends Service {
                 Log.d(TAG, "String from BluetoothLeService.java to sent now: " + /*new String(data) + "\n" + */stringBuilder.toString());
                 // only put the Hex paired raw bytes in the broadcast now.
                 intent.putExtra(EXTRA_DATA, /*new String(data) + "\n" + */stringBuilder.toString());
+                intent.putExtra(EXTRA_DATA2, data); // put original data
             }
         }
         sendBroadcast(intent);
