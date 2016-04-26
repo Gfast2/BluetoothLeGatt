@@ -342,9 +342,11 @@ public class DeviceScanActivity extends ListActivity {
             int colorBattery = 11184810; // "#AAAAAA". color code for battery state.
             int batteryStateInt;
 //                    batteryStateInt = Integer.parseInt(batteryState.get(device.getAddress()));
+
             batteryStateInt = 100; // faked it inorder to let android not crazy.
 //                    Integer.parseInt(batteryState.get(device.getAddress()));
-            batteryStateInt = batteryColor(device); //TODO: How to pass arguments "device" into this Thread
+//          // when there is a no-ibeacon device found, with color calculation, software crashed.
+//           batteryStateInt = batteryColor(device); //TODO: How to pass arguments "device" into this Thread
             if (batteryStateInt > 75) {
                 colorBattery = Color.parseColor("#99CC00"); // The green state
             } else if (batteryStateInt > 50)
