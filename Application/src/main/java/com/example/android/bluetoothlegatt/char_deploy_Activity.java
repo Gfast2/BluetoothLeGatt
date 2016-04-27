@@ -15,6 +15,10 @@ public class char_deploy_Activity extends Activity {
         Button btEnter  = (Button) findViewById(R.id.measurepower_enter);
         Button btCancel = (Button) findViewById(R.id.deploy_cancel);
 
+        byte[] deployByte = getIntent().getByteArrayExtra(DeviceControlActivity.EXTRA_READ);
+
+
+
         btEnter.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {

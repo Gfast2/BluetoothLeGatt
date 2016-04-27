@@ -119,7 +119,7 @@ public class DeviceControlActivity extends Activity {
                 displayData(intent.getStringExtra(BluetoothLeService.EXTRA_DATA));
 //                clickCoordinator(selectedIntent, intent.getStringExtra(BluetoothLeService.EXTRA_DATA));
                 // Now we send byte[] to the popup window directely
-                clickCoordinator(selectedIntent, intent.getByteArrayExtra(BluetoothLeService.EXTRA_DATA2),requestCode);
+                clickCoordinator(selectedIntent, intent.getByteArrayExtra(BluetoothLeService.EXTRA_DATA2), requestCode);
                 Log.d(TAG, "EXTRA_DATA from BluetoothLeService service to display.");
             }
         }
@@ -406,10 +406,15 @@ public class DeviceControlActivity extends Activity {
                 byte[] intentData = data.getByteArrayExtra("majorminor_data");
                 mBluetoothLeService.writeCustomCharacteristic( // This is set major & minor
                         "0000ffb1-0000-1000-8000-00805f9b34fb", intentData);
-            }
-            else if (requestCode == 1) {
+            } else if (requestCode == 1) {
                 byte[] intentData = data.getByteArrayExtra("uuid_data");
-                mBluetoothLeService.writeCustomCharacteristic("0000ffb2-0000-1000-8000-00805f9b34fb", intentData);
+                mBluetoothLeService.writeCustomCharacteristic(
+                        "0000ffb2-0000-1000-8000-00805f9b34fb", intentData);
+            }
+            else if (requestCode == 2) {
+                byte[] intentData = data.getByteArrayExtra("advert_data");
+                mBluetoothLeService.writeCustomCharacteristic(
+                        "0000ffb3-0000-1000-8000-00805f9b34fb", intentData);
             }
         }
     }

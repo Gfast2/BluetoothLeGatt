@@ -6,7 +6,7 @@
     <RadioGroup
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id="@+id/char_advert_radioGroup"
+        android:id="@+id/advert_radioGroup"
         android:layout_marginLeft="50dp">
 
         <RadioButton
@@ -102,7 +102,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Bestätigen"
-            android:id="@+id/measurepower_enter"
+            android:id="@+id/advert_enter"
             android:layout_gravity="center_horizontal"
             android:layout_marginLeft="@dimen/margin_large"
             android:layout_marginRight="@dimen/margin_large"
@@ -113,11 +113,11 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Abbrechen"
-            android:id="@+id/measurepower_cancel"
+            android:id="@+id/advert_cancel"
             android:layout_gravity="center_horizontal"
             android:layout_marginLeft="@dimen/margin_large"
             android:layout_marginRight="@dimen/margin_large"
             android:layout_centerVertical="true"
-            android:layout_toEndOf="@+id/measurepower_enter" />
+            android:layout_toEndOf="@+id/advert_enter" />
     </RelativeLayout>
 </LinearLayout>
