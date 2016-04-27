@@ -9,11 +9,17 @@
     <option name="TOOL_WINDOW_CONFIGURED_FILTER" value="Show only selected application" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="12f270b2-9134-4f53-9ddf-ed6004ee4c6b" name="Default" comment="">
+    <list default="true" id="12f270b2-9134-4f53-9ddf-ed6004ee4c6b" name="Default" comment="Now I can read / set tx-power.">
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Application/build/intermediates/res/debug/layout/button_control.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Application/src/main/res/layout/button_control.xml" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/2.2.1/taskArtifacts/cache.properties.lock" afterPath="$PROJECT_DIR$/.gradle/2.2.1/taskArtifacts/cache.properties.lock" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/2.2.1/taskArtifacts/fileHashes.bin" afterPath="$PROJECT_DIR$/.gradle/2.2.1/taskArtifacts/fileHashes.bin" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/2.2.1/taskArtifacts/fileSnapshots.bin" afterPath="$PROJECT_DIR$/.gradle/2.2.1/taskArtifacts/fileSnapshots.bin" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/2.2.1/taskArtifacts/taskArtifacts.bin" afterPath="$PROJECT_DIR$/.gradle/2.2.1/taskArtifacts/taskArtifacts.bin" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Application/build/intermediates/classes/debug/com/example/android/bluetoothlegatt/DeviceControlActivity$1.class" afterPath="$PROJECT_DIR$/Application/build/intermediates/classes/debug/com/example/android/bluetoothlegatt/DeviceControlActivity$1.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Application/build/intermediates/classes/debug/com/example/android/bluetoothlegatt/DeviceControlActivity$2.class" afterPath="$PROJECT_DIR$/Application/build/intermediates/classes/debug/com/example/android/bluetoothlegatt/DeviceControlActivity$2.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Application/build/intermediates/classes/debug/com/example/android/bluetoothlegatt/DeviceControlActivity$3.class" afterPath="$PROJECT_DIR$/Application/build/intermediates/classes/debug/com/example/android/bluetoothlegatt/DeviceControlActivity$3.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Application/build/intermediates/classes/debug/com/example/android/bluetoothlegatt/DeviceControlActivity$4.class" afterPath="$PROJECT_DIR$/Application/build/intermediates/classes/debug/com/example/android/bluetoothlegatt/DeviceControlActivity$4.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Application/build/intermediates/classes/debug/com/example/android/bluetoothlegatt/DeviceControlActivity.class" afterPath="$PROJECT_DIR$/Application/build/intermediates/classes/debug/com/example/android/bluetoothlegatt/DeviceControlActivity.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Application/build/intermediates/classes/debug/com/example/android/bluetoothlegatt/DeviceScanActivity$LeDeviceListAdapter.class" afterPath="$PROJECT_DIR$/Application/build/intermediates/classes/debug/com/example/android/bluetoothlegatt/DeviceScanActivity$LeDeviceListAdapter.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Application/build/intermediates/classes/debug/com/example/android/bluetoothlegatt/DeviceScanActivity.class" afterPath="$PROJECT_DIR$/Application/build/intermediates/classes/debug/com/example/android/bluetoothlegatt/DeviceScanActivity.class" />
@@ -34,7 +40,6 @@
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Application/build/intermediates/res/debug/layout/gatt_services_characteristics.xml" afterPath="$PROJECT_DIR$/Application/build/intermediates/res/debug/layout/gatt_services_characteristics.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Application/build/intermediates/symbols/debug/R.txt" afterPath="$PROJECT_DIR$/Application/build/intermediates/symbols/debug/R.txt" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Application/src/main/java/com/example/android/bluetoothlegatt/DeviceControlActivity.java" afterPath="$PROJECT_DIR$/Application/src/main/java/com/example/android/bluetoothlegatt/DeviceControlActivity.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Application/src/main/java/com/example/android/bluetoothlegatt/char_txpower_Activity.java" afterPath="$PROJECT_DIR$/Application/src/main/java/com/example/android/bluetoothlegatt/char_txpower_Activity.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Application/src/main/res/layout/gatt_services_characteristics.xml" afterPath="$PROJECT_DIR$/Application/src/main/res/layout/gatt_services_characteristics.xml" />
     </list>
     <ignored path="BluetoothLeGatt.iws" />
@@ -79,23 +84,25 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="DeviceControlActivity.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="DeviceControlActivity.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Application/src/main/java/com/example/android/bluetoothlegatt/DeviceControlActivity.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.59098226">
-              <caret line="357" column="68" selection-start-line="357" selection-start-column="68" selection-end-line="357" selection-end-column="68" />
+            <state vertical-scroll-proportion="-15.333333">
+              <caret line="441" column="9" selection-start-line="441" selection-start-column="9" selection-end-line="441" selection-end-column="9" />
               <folding>
-                <marker date="1461748876000" expanded="true" signature="8234:10280" placeholder="..." />
+                <element signature="e#12138#12674#0" expanded="true" />
+                <element signature="e#12673#12674#0" expanded="true" />
+                <marker date="1461750606000" expanded="true" signature="8293:10339" placeholder="..." />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="BeaconGattAttributes.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Application/src/main/java/com/example/android/bluetoothlegatt/BeaconGattAttributes.java">
+      <file leaf-file-name="BluetoothLeService.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Application/src/main/java/com/example/android/bluetoothlegatt/BluetoothLeService.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="44" column="76" selection-start-line="44" selection-start-column="64" selection-end-line="44" selection-end-column="76" />
+            <state vertical-scroll-proportion="5.438116">
+              <caret line="367" column="9" selection-start-line="367" selection-start-column="9" selection-end-line="367" selection-end-column="9" />
               <folding />
             </state>
           </provider>
@@ -104,8 +111,8 @@
       <file leaf-file-name="gatt_services_characteristics.xml" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Application/src/main/res/layout/gatt_services_characteristics.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-14.81132">
-              <caret line="77" column="47" selection-start-line="77" selection-start-column="47" selection-end-line="77" selection-end-column="47" />
+            <state vertical-scroll-proportion="-6.4716983">
+              <caret line="70" column="37" selection-start-line="70" selection-start-column="37" selection-end-line="70" selection-end-column="37" />
               <folding />
             </state>
           </provider>
@@ -1466,8 +1473,9 @@
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="width" value="1920" />
-    <option name="height" value="1080" />
+    <option name="y" value="23" />
+    <option name="width" value="1252" />
+    <option name="height" value="1057" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <OptionsSetting value="true" id="Add" />
@@ -1729,14 +1737,13 @@
     <property name="ChangesBrowser.SHOW_FLATTEN" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="UI_DESIGNER_EDITOR_MODE.UIDesignerToolWindowManager2.WIDTH" value="689" />
-    <property name="SearchEverywhereHistoryKey" value="char_adver&#9;FILE&#9;file:///Users/sugao/AndroidStudioProjects/BluetoothLeGatt/Application/src/main/java/com/example/android/bluetoothlegatt/char_advert_Activity.java&#10;char_tx&#9;FILE&#9;file:///Users/sugao/AndroidStudioProjects/BluetoothLeGatt/Application/src/main/java/com/example/android/bluetoothlegatt/char_txpower_Activity.java&#10;char_me&#9;FILE&#9;file:///Users/sugao/AndroidStudioProjects/BluetoothLeGatt/Application/src/main/java/com/example/android/bluetoothlegatt/char_mepower_Activity.java&#10;deplo&#9;FILE&#9;file:///Users/sugao/AndroidStudioProjects/BluetoothLeGatt/Application/src/main/res/layout/characteristic_deploymode.xml&#10;deploy&#9;FILE&#9;file:///Users/sugao/AndroidStudioProjects/BluetoothLeGatt/Application/src/main/java/com/example/android/bluetoothlegatt/char_deploy_Activity.java&#10;char_advert&#9;FILE&#9;file:///Users/sugao/AndroidStudioProjects/BluetoothLeGatt/Application/src/main/java/com/example/android/bluetoothlegatt/char_advert_Activity.java&#10;advert&#9;FILE&#9;file:///Users/sugao/AndroidStudioProjects/BluetoothLeGatt/Application/src/main/res/layout/characteristic_advertinterval.xml&#10;control&#9;FILE&#9;file:///Users/sugao/AndroidStudioProjects/BluetoothLeGatt/Application/src/main/java/com/example/android/bluetoothlegatt/DeviceControlActivity.java&#10;char_major&#9;FILE&#9;file:///Users/sugao/AndroidStudioProjects/BluetoothLeGatt/Application/src/main/java/com/example/android/bluetoothlegatt/char_majorminor_Activity.java&#10;bluetoo&#9;FILE&#9;file:///Users/sugao/AndroidStudioProjects/BluetoothLeGatt/Application/src/main/java/com/example/android/bluetoothlegatt/BluetoothLeService.java&#10;major&#9;FILE&#9;file:///Users/sugao/AndroidStudioProjects/BluetoothLeGatt/Application/src/main/java/com/example/android/bluetoothlegatt/char_majorminor_Activity.java&#10;beacon&#9;FILE&#9;file:///Users/sugao/AndroidStudioProjects/BluetoothLeGatt/Application/src/main/java/com/example/android/bluetoothlegatt/BeaconGattAttributes.java&#10;scan&#9;FILE&#9;file:///Users/sugao/AndroidStudioProjects/BluetoothLeGatt/Application/src/main/java/com/example/android/bluetoothlegatt/DeviceScanActivity.java&#10;service&#9;FILE&#9;file:///Users/sugao/AndroidStudioProjects/BluetoothLeGatt/Application/src/main/java/com/example/android/bluetoothlegatt/BluetoothLeService.java&#10;ScanAc&#9;FILE&#9;file:///Users/sugao/AndroidStudioProjects/BluetoothLeGatt/Application/src/main/java/com/example/android/bluetoothlegatt/DeviceScanActivity.java&#10;characteristic_me&#9;FILE&#9;file:///Users/sugao/AndroidStudioProjects/BluetoothLeGatt/Application/src/main/res/layout/characteristic_measurepower.xml&#10;tx&#9;FILE&#9;file:///Users/sugao/AndroidStudioProjects/BluetoothLeGatt/Application/src/main/res/layout/characteristic_txpower.xml&#10;char_deploy&#9;FILE&#9;file:///Users/sugao/AndroidStudioProjects/BluetoothLeGatt/Application/src/main/java/com/example/android/bluetoothlegatt/char_deploy_Activity.java&#10;characteristic_de&#9;FILE&#9;file:///Users/sugao/AndroidStudioProjects/BluetoothLeGatt/Application/src/main/res/layout/characteristic_deploymode.xml&#10;depl&#9;FILE&#9;file:///Users/sugao/AndroidStudioProjects/BluetoothLeGatt/Application/src/main/res/layout/characteristic_deploymode.xml&#10;uuid&#9;FILE&#9;file:///Users/sugao/AndroidStudioProjects/BluetoothLeGatt/Application/src/main/res/layout/characteristic_uuid.xml&#10;contro&#9;FILE&#9;file:///Users/sugao/AndroidStudioProjects/BluetoothLeGatt/Application/src/main/java/com/example/android/bluetoothlegatt/DeviceControlActivity.java&#10;bluetoothLe&#9;FILE&#9;file:///Users/sugao/AndroidStudioProjects/BluetoothLeGatt/Application/src/main/java/com/example/android/bluetoothlegatt/BluetoothLeService.java&#10;no_data&#9;PSI&#9;JAVA://com.example.android.bluetoothlegatt.R.string#no_data" />
+    <property name="SearchEverywhereHistoryKey" value="BLE&#9;FILE&#9;file:///Users/sugao/AndroidStudioProjects/BluetoothLeGatt/Application/src/main/java/com/example/android/bluetoothlegatt/BluetoothLeService.java&#10;char_adver&#9;FILE&#9;file:///Users/sugao/AndroidStudioProjects/BluetoothLeGatt/Application/src/main/java/com/example/android/bluetoothlegatt/char_advert_Activity.java&#10;char_tx&#9;FILE&#9;file:///Users/sugao/AndroidStudioProjects/BluetoothLeGatt/Application/src/main/java/com/example/android/bluetoothlegatt/char_txpower_Activity.java&#10;char_me&#9;FILE&#9;file:///Users/sugao/AndroidStudioProjects/BluetoothLeGatt/Application/src/main/java/com/example/android/bluetoothlegatt/char_mepower_Activity.java&#10;deplo&#9;FILE&#9;file:///Users/sugao/AndroidStudioProjects/BluetoothLeGatt/Application/src/main/res/layout/characteristic_deploymode.xml&#10;deploy&#9;FILE&#9;file:///Users/sugao/AndroidStudioProjects/BluetoothLeGatt/Application/src/main/java/com/example/android/bluetoothlegatt/char_deploy_Activity.java&#10;char_advert&#9;FILE&#9;file:///Users/sugao/AndroidStudioProjects/BluetoothLeGatt/Application/src/main/java/com/example/android/bluetoothlegatt/char_advert_Activity.java&#10;advert&#9;FILE&#9;file:///Users/sugao/AndroidStudioProjects/BluetoothLeGatt/Application/src/main/res/layout/characteristic_advertinterval.xml&#10;control&#9;FILE&#9;file:///Users/sugao/AndroidStudioProjects/BluetoothLeGatt/Application/src/main/java/com/example/android/bluetoothlegatt/DeviceControlActivity.java&#10;char_major&#9;FILE&#9;file:///Users/sugao/AndroidStudioProjects/BluetoothLeGatt/Application/src/main/java/com/example/android/bluetoothlegatt/char_majorminor_Activity.java&#10;bluetoo&#9;FILE&#9;file:///Users/sugao/AndroidStudioProjects/BluetoothLeGatt/Application/src/main/java/com/example/android/bluetoothlegatt/BluetoothLeService.java&#10;major&#9;FILE&#9;file:///Users/sugao/AndroidStudioProjects/BluetoothLeGatt/Application/src/main/java/com/example/android/bluetoothlegatt/char_majorminor_Activity.java&#10;beacon&#9;FILE&#9;file:///Users/sugao/AndroidStudioProjects/BluetoothLeGatt/Application/src/main/java/com/example/android/bluetoothlegatt/BeaconGattAttributes.java&#10;scan&#9;FILE&#9;file:///Users/sugao/AndroidStudioProjects/BluetoothLeGatt/Application/src/main/java/com/example/android/bluetoothlegatt/DeviceScanActivity.java&#10;service&#9;FILE&#9;file:///Users/sugao/AndroidStudioProjects/BluetoothLeGatt/Application/src/main/java/com/example/android/bluetoothlegatt/BluetoothLeService.java&#10;ScanAc&#9;FILE&#9;file:///Users/sugao/AndroidStudioProjects/BluetoothLeGatt/Application/src/main/java/com/example/android/bluetoothlegatt/DeviceScanActivity.java&#10;characteristic_me&#9;FILE&#9;file:///Users/sugao/AndroidStudioProjects/BluetoothLeGatt/Application/src/main/res/layout/characteristic_measurepower.xml&#10;tx&#9;FILE&#9;file:///Users/sugao/AndroidStudioProjects/BluetoothLeGatt/Application/src/main/res/layout/characteristic_txpower.xml&#10;char_deploy&#9;FILE&#9;file:///Users/sugao/AndroidStudioProjects/BluetoothLeGatt/Application/src/main/java/com/example/android/bluetoothlegatt/char_deploy_Activity.java&#10;characteristic_de&#9;FILE&#9;file:///Users/sugao/AndroidStudioProjects/BluetoothLeGatt/Application/src/main/res/layout/characteristic_deploymode.xml&#10;depl&#9;FILE&#9;file:///Users/sugao/AndroidStudioProjects/BluetoothLeGatt/Application/src/main/res/layout/characteristic_deploymode.xml&#10;uuid&#9;FILE&#9;file:///Users/sugao/AndroidStudioProjects/BluetoothLeGatt/Application/src/main/res/layout/characteristic_uuid.xml&#10;contro&#9;FILE&#9;file:///Users/sugao/AndroidStudioProjects/BluetoothLeGatt/Application/src/main/java/com/example/android/bluetoothlegatt/DeviceControlActivity.java&#10;bluetoothLe&#9;FILE&#9;file:///Users/sugao/AndroidStudioProjects/BluetoothLeGatt/Application/src/main/java/com/example/android/bluetoothlegatt/BluetoothLeService.java&#10;no_data&#9;PSI&#9;JAVA://com.example.android.bluetoothlegatt.R.string#no_data" />
     <property name="UI_DESIGNER_EDITOR_MODE.PaletteToolWindowManager.SHOW" value="true" />
     <property name="full.screen.before.presentation.mode" value="false" />
     <property name="android.project.structure.last.selected" value="SDK Location" />
     <property name="android.project.structure.proportion" value="0.15" />
     <property name="UI_DESIGNER_EDITOR_MODE.PaletteToolWindowManager.WIDTH" value="280" />
     <property name="UI_DESIGNER_EDITOR_MODE.UIDesignerToolWindowManager2.SHOW" value="true" />
-    <property name="FullScreen" value="true" />
   </component>
   <component name="Push.Settings">
     <excluded-roots>
@@ -2164,7 +2171,13 @@
       <option name="project" value="LOCAL" />
       <updated>1461746692565</updated>
     </task>
-    <option name="localTasksCounter" value="24" />
+    <task id="LOCAL-00024" summary="Now I can read / set tx-power.">
+      <created>1461748918936</created>
+      <option name="number" value="00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1461748918936</updated>
+    </task>
+    <option name="localTasksCounter" value="25" />
     <servers />
   </component>
   <component name="TodoView">
@@ -2177,16 +2190,16 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="0" width="1920" height="1080" extended-state="6" />
+    <frame x="0" y="23" width="1252" height="1057" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.38711396" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.29504132" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32943678" sideWeight="0.4914803" order="12" side_tool="false" content_ui="tabs" />
       <window_info id="Android Model" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32897317" sideWeight="0.5" order="5" side_tool="true" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Android Monitor" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.34178498" sideWeight="0.49361023" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Android Monitor" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.35812965" sideWeight="0.49361023" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Captures" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.53453773" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3134963" sideWeight="0.5063898" order="8" side_tool="true" content_ui="tabs" />
@@ -2199,7 +2212,7 @@
       <window_info id="Gradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32831916" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32943678" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24861" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.18903089" sideWeight="0.49076518" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.29338843" sideWeight="0.49076518" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32943678" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24980143" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
@@ -2281,7 +2294,8 @@
     <MESSAGE value="Now I can read / send UUID." />
     <MESSAGE value="Now I can read / send Advertising Interval setting." />
     <MESSAGE value="Now I can read &amp; write value of Deploy Mode and Measure Power." />
-    <option name="LAST_COMMIT_MESSAGE" value="Now I can read &amp; write value of Deploy Mode and Measure Power." />
+    <MESSAGE value="Now I can read / set tx-power." />
+    <option name="LAST_COMMIT_MESSAGE" value="Now I can read / set tx-power." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -2291,24 +2305,6 @@
           <line>926</line>
           <properties />
           <option name="timeStamp" value="1" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/Application/src/main/java/com/example/android/bluetoothlegatt/DeviceControlActivity.java</url>
-          <line>401</line>
-          <properties />
-          <option name="timeStamp" value="80" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/Application/src/main/java/com/example/android/bluetoothlegatt/DeviceControlActivity.java</url>
-          <line>405</line>
-          <properties />
-          <option name="timeStamp" value="81" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/Application/src/main/java/com/example/android/bluetoothlegatt/DeviceControlActivity.java</url>
-          <line>409</line>
-          <properties />
-          <option name="timeStamp" value="82" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/Application/src/main/java/com/example/android/bluetoothlegatt/char_uuid_Activity.java</url>
@@ -2324,25 +2320,13 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/Application/src/main/java/com/example/android/bluetoothlegatt/DeviceControlActivity.java</url>
-          <line>398</line>
-          <properties />
-          <option name="timeStamp" value="89" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/Application/src/main/java/com/example/android/bluetoothlegatt/DeviceControlActivity.java</url>
-          <line>407</line>
-          <properties />
-          <option name="timeStamp" value="94" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/Application/src/main/java/com/example/android/bluetoothlegatt/DeviceControlActivity.java</url>
-          <line>165</line>
+          <line>167</line>
           <properties />
           <option name="timeStamp" value="95" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/Application/src/main/java/com/example/android/bluetoothlegatt/DeviceControlActivity.java</url>
-          <line>121</line>
+          <line>123</line>
           <properties />
           <option name="timeStamp" value="97" />
         </line-breakpoint>
@@ -2351,42 +2335,6 @@
           <line>74</line>
           <properties />
           <option name="timeStamp" value="99" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/Application/src/main/java/com/example/android/bluetoothlegatt/DeviceControlActivity.java</url>
-          <line>414</line>
-          <properties />
-          <option name="timeStamp" value="104" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/Application/src/main/java/com/example/android/bluetoothlegatt/DeviceControlActivity.java</url>
-          <line>415</line>
-          <properties />
-          <option name="timeStamp" value="105" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/Application/src/main/java/com/example/android/bluetoothlegatt/DeviceControlActivity.java</url>
-          <line>416</line>
-          <properties />
-          <option name="timeStamp" value="106" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/Application/src/main/java/com/example/android/bluetoothlegatt/DeviceControlActivity.java</url>
-          <line>419</line>
-          <properties />
-          <option name="timeStamp" value="109" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/Application/src/main/java/com/example/android/bluetoothlegatt/DeviceControlActivity.java</url>
-          <line>420</line>
-          <properties />
-          <option name="timeStamp" value="110" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/Application/src/main/java/com/example/android/bluetoothlegatt/DeviceControlActivity.java</url>
-          <line>421</line>
-          <properties />
-          <option name="timeStamp" value="111" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/Application/src/main/java/com/example/android/bluetoothlegatt/char_mepower_Activity.java</url>
@@ -2405,42 +2353,6 @@
           <line>43</line>
           <properties />
           <option name="timeStamp" value="121" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/Application/src/main/java/com/example/android/bluetoothlegatt/DeviceControlActivity.java</url>
-          <line>424</line>
-          <properties />
-          <option name="timeStamp" value="122" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/Application/src/main/java/com/example/android/bluetoothlegatt/DeviceControlActivity.java</url>
-          <line>425</line>
-          <properties />
-          <option name="timeStamp" value="123" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/Application/src/main/java/com/example/android/bluetoothlegatt/DeviceControlActivity.java</url>
-          <line>426</line>
-          <properties />
-          <option name="timeStamp" value="124" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/Application/src/main/java/com/example/android/bluetoothlegatt/DeviceControlActivity.java</url>
-          <line>429</line>
-          <properties />
-          <option name="timeStamp" value="126" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/Application/src/main/java/com/example/android/bluetoothlegatt/DeviceControlActivity.java</url>
-          <line>430</line>
-          <properties />
-          <option name="timeStamp" value="127" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/Application/src/main/java/com/example/android/bluetoothlegatt/DeviceControlActivity.java</url>
-          <line>431</line>
-          <properties />
-          <option name="timeStamp" value="128" />
         </line-breakpoint>
       </breakpoints>
       <option name="time" value="131" />
@@ -2510,17 +2422,6 @@
       <provider editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="18" column="51" selection-start-line="18" selection-start-column="51" selection-end-line="18" selection-end-column="51" />
-          <folding />
-        </state>
-      </provider>
-      <provider selected="true" editor-type-id="android-designer">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Application/src/main/res/layout/button_control.xml">
-      <provider editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="20" column="13" selection-start-line="20" selection-start-column="13" selection-end-line="20" selection-end-column="13" />
           <folding />
         </state>
       </provider>
@@ -2816,14 +2717,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Application/src/main/java/com/example/android/bluetoothlegatt/BluetoothLeService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.3067376">
-          <caret line="227" column="0" selection-start-line="227" selection-start-column="0" selection-end-line="227" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Application/src/main/java/com/example/android/bluetoothlegatt/char_mepower_Activity.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.49238577">
@@ -2869,18 +2762,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Application/src/main/java/com/example/android/bluetoothlegatt/BeaconGattAttributes.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="44" column="76" selection-start-line="44" selection-start-column="64" selection-end-line="44" selection-end-column="76" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Application/src/main/res/layout/gatt_services_characteristics.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-14.81132">
-          <caret line="77" column="47" selection-start-line="77" selection-start-column="47" selection-end-line="77" selection-end-column="47" />
+        <state vertical-scroll-proportion="-6.4716983">
+          <caret line="70" column="37" selection-start-line="70" selection-start-column="37" selection-end-line="70" selection-end-column="37" />
           <folding />
         </state>
       </provider>
@@ -2888,13 +2773,31 @@
         <state />
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/Application/src/main/java/com/example/android/bluetoothlegatt/BeaconGattAttributes.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.5410628">
+          <caret line="49" column="64" selection-start-line="49" selection-start-column="64" selection-end-line="49" selection-end-column="64" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/Application/src/main/java/com/example/android/bluetoothlegatt/DeviceControlActivity.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.59098226">
-          <caret line="357" column="68" selection-start-line="357" selection-start-column="68" selection-end-line="357" selection-end-column="68" />
+        <state vertical-scroll-proportion="-15.333333">
+          <caret line="441" column="9" selection-start-line="441" selection-start-column="9" selection-end-line="441" selection-end-column="9" />
           <folding>
-            <marker date="1461748876000" expanded="true" signature="8234:10280" placeholder="..." />
+            <element signature="e#12138#12674#0" expanded="true" />
+            <element signature="e#12673#12674#0" expanded="true" />
+            <marker date="1461750606000" expanded="true" signature="8293:10339" placeholder="..." />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Application/src/main/java/com/example/android/bluetoothlegatt/BluetoothLeService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="5.438116">
+          <caret line="367" column="9" selection-start-line="367" selection-start-column="9" selection-end-line="367" selection-end-column="9" />
+          <folding />
         </state>
       </provider>
     </entry>

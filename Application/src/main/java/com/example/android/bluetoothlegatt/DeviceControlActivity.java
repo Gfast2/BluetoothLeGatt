@@ -31,9 +31,11 @@ import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
+import android.widget.Button;
 import android.widget.ExpandableListView;
 import android.widget.SimpleExpandableListAdapter;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import java.util.ArrayList;
 import java.util.HashMap;
@@ -224,6 +226,7 @@ public class DeviceControlActivity extends Activity {
         super.onCreate(savedInstanceState);
 //        setContentView(R.layout.button_control);  //*********************************************
         setContentView(R.layout.gatt_services_characteristics);
+        Button btRestart = (Button) findViewById(R.id.devicecontrol_restart);
         final Intent intent = getIntent();
         mDeviceName = intent.getStringExtra(EXTRAS_DEVICE_NAME);
         mDeviceAddress = intent.getStringExtra(EXTRAS_DEVICE_ADDRESS);
@@ -241,6 +244,18 @@ public class DeviceControlActivity extends Activity {
         getActionBar().setDisplayHomeAsUpEnabled(true);
         Intent gattServiceIntent = new Intent(this, BluetoothLeService.class);
         bindService(gattServiceIntent, mServiceConnection, BIND_AUTO_CREATE);
+
+        btRestart.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                byte[] restartByte = {0x01}; // Soft restart devide.
+                mBluetoothLeService.writeCustomCharacteristic(
+                        "0000ffbf-0000-1000-8000-00805f9b34fb", restartByte);
+                mBluetoothLeService.disconnect();
+                Toast.makeText(getApplicationContext(), "Device restart now.",Toast.LENGTH_LONG).show();
+                finish(); // jump out of this activity
+            }
+        });
     }
 
     @Override
@@ -397,12 +412,8 @@ public class DeviceControlActivity extends Activity {
     @Override
     protected void onActivityResult(int requestCode, int resultCode, Intent data) {
         //super.onActivityResult(requestCode, resultCode, data);
-        Log.d(TAG, "enter onActivityResult");
         // Only when it's not canceled
         if (resultCode == RESULT_OK) {
-//            int intentData = data.getIntExtra("majorminor_data",0);
-
-//            Log.d(TAG, "get data back:" + intentData); // get the data back
             if (requestCode == 0) {
                 byte[] intentData = data.getByteArrayExtra("majorminor_data");
                 mBluetoothLeService.writeCustomCharacteristic( // This is set major & minor
@@ -411,40 +422,23 @@ public class DeviceControlActivity extends Activity {
                 byte[] intentData = data.getByteArrayExtra("uuid_data");
                 mBluetoothLeService.writeCustomCharacteristic(
                         "0000ffb2-0000-1000-8000-00805f9b34fb", intentData);
-            }
-            else if (requestCode == 2) {
+            } else if (requestCode == 2) {
                 byte[] intentData = data.getByteArrayExtra("advert_data");
                 mBluetoothLeService.writeCustomCharacteristic(
                         "0000ffb3-0000-1000-8000-00805f9b34fb", intentData);
-            }
-            else if (requestCode == 3) {
+            } else if (requestCode == 3) {
                 byte[] intentData = data.getByteArrayExtra("deploy_data");
                 mBluetoothLeService.writeCustomCharacteristic(
                         "0000ffb5-0000-1000-8000-00805f9b34fb", intentData);
-            }
-            else if (requestCode == 4) {
+            } else if (requestCode == 4) {
                 byte[] intentData = data.getByteArrayExtra("measurepower_data");
                 mBluetoothLeService.writeCustomCharacteristic(
                         "0000ffb8-0000-1000-8000-00805f9b34fb", intentData);
-            }
-            else if (requestCode == 5) {
+            } else if (requestCode == 5) {
                 byte[] intentData = data.getByteArrayExtra("txpower_data");
                 mBluetoothLeService.writeCustomCharacteristic(
                         "0000ffb9-0000-1000-8000-00805f9b34fb", intentData);
             }
-        }
-    }
-
-    // These two function are used to for the demo at the very beginning.
-    public void onClickWrite(View v) {
-        if (mBluetoothLeService != null) {
-            mBluetoothLeService.writeCustomCharacteristic(0x01);
-        }
-    }
-
-    public void onClickRead(View v) {
-        if (mBluetoothLeService != null) {
-            mBluetoothLeService.readCustomCharacteristic();
         }
     }
 }
