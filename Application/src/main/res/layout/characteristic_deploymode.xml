@@ -11,7 +11,7 @@
         android:layout_marginLeft="50dp">
 
         <RadioButton
-            android:id="@+id/radioBAn"
+            android:id="@+id/deploy_an"
             android:layout_width="300dp"
             android:layout_height="wrap_content"
             android:layout_marginLeft="@dimen/margin_large"
@@ -20,7 +20,7 @@
             android:text="An" />
 
         <RadioButton
-            android:id="@+id/radioBAus"
+            android:id="@+id/deploy_aus"
             android:layout_width="300dp"
             android:layout_height="wrap_content"
             android:layout_marginLeft="@dimen/margin_large"

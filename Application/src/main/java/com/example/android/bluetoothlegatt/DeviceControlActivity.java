@@ -416,6 +416,16 @@ public class DeviceControlActivity extends Activity {
                 mBluetoothLeService.writeCustomCharacteristic(
                         "0000ffb3-0000-1000-8000-00805f9b34fb", intentData);
             }
+            else if (requestCode == 3) {
+                byte[] intentData = data.getByteArrayExtra("deploy_data");
+                mBluetoothLeService.writeCustomCharacteristic(
+                        "0000ffb5-0000-1000-8000-00805f9b34fb", intentData);
+            }
+            else if (requestCode == 4) {
+                byte[] intentData = data.getByteArrayExtra("measurepower_data");
+                mBluetoothLeService.writeCustomCharacteristic(
+                        "0000ffb8-0000-1000-8000-00805f9b34fb", intentData);
+            }
         }
     }
 
