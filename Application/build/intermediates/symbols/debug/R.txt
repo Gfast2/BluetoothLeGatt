@@ -65,7 +65,6 @@ int id advert_enter 0x7f0a0014
 int id advert_radioGroup 0x7f0a000a
 int id button 0x7f0a0008
 int id button2 0x7f0a0007
-int id char_advert_radioGroup 0x7f0a0026
 int id connection_state 0x7f0a0030
 int id data_value 0x7f0a0009
 int id deploy_an 0x7f0a001c
@@ -75,8 +74,9 @@ int id deploy_enter 0x7f0a001e
 int id deploy_radioGroup 0x7f0a001b
 int id descrip 0x7f0a0005
 int id device_address 0x7f0a002f
-int id device_battery 0x7f0a0033
-int id device_name 0x7f0a0032
+int id device_battery 0x7f0a0034
+int id device_name 0x7f0a0033
+int id devicecontrol_restart 0x7f0a0032
 int id editText 0x7f0a0020
 int id gatt_services_list 0x7f0a0031
 int id majorInput 0x7f0a0022
@@ -85,11 +85,11 @@ int id map 0x7f0a0004
 int id measurepower_cancel 0x7f0a001a
 int id measurepower_enter 0x7f0a0019
 int id meaurepower_text 0x7f0a0025
-int id menu_connect 0x7f0a0035
-int id menu_disconnect 0x7f0a0036
-int id menu_refresh 0x7f0a0034
-int id menu_scan 0x7f0a0037
-int id menu_stop 0x7f0a0038
+int id menu_connect 0x7f0a0036
+int id menu_disconnect 0x7f0a0037
+int id menu_refresh 0x7f0a0035
+int id menu_scan 0x7f0a0038
+int id menu_stop 0x7f0a0039
 int id minorInput 0x7f0a0024
 int id minorLabel 0x7f0a0023
 int id none 0x7f0a0002
@@ -102,6 +102,7 @@ int id txpower_enter 0x7f0a002a
 int id txpower_high 0x7f0a0029
 int id txpower_low 0x7f0a0027
 int id txpower_middle 0x7f0a0028
+int id txpower_radioGroup 0x7f0a0026
 int id uuid 0x7f0a002c
 int id uuid_cancel 0x7f0a002e
 int id uuid_enter 0x7f0a002d

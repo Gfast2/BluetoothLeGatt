@@ -354,7 +354,8 @@ public class DeviceControlActivity extends Activity {
                             !charaString.contentEquals("Device ID") &&
                             !charaString.contentEquals("Auth Timeout") &&
                             !charaString.contentEquals("Control LED") &&
-                            !charaString.contentEquals("Advertising Blink")
+                            !charaString.contentEquals("Advertising Blink") &&
+                            !charaString.contentEquals("Soft Restart")
                             ) {
                         charas.add(gattCharacteristic);
                         HashMap<String, String> currentCharaData = new HashMap<String, String>();
@@ -425,6 +426,11 @@ public class DeviceControlActivity extends Activity {
                 byte[] intentData = data.getByteArrayExtra("measurepower_data");
                 mBluetoothLeService.writeCustomCharacteristic(
                         "0000ffb8-0000-1000-8000-00805f9b34fb", intentData);
+            }
+            else if (requestCode == 5) {
+                byte[] intentData = data.getByteArrayExtra("txpower_data");
+                mBluetoothLeService.writeCustomCharacteristic(
+                        "0000ffb9-0000-1000-8000-00805f9b34fb", intentData);
             }
         }
     }

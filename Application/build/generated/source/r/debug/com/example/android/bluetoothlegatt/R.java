@@ -209,7 +209,6 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
         public static final int advert_radioGroup=0x7f0a000a;
         public static final int button=0x7f0a0008;
         public static final int button2=0x7f0a0007;
-        public static final int char_advert_radioGroup=0x7f0a0026;
         public static final int connection_state=0x7f0a0030;
         public static final int data_value=0x7f0a0009;
         public static final int deploy_an=0x7f0a001c;
@@ -219,8 +218,9 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
         public static final int deploy_radioGroup=0x7f0a001b;
         public static final int descrip=0x7f0a0005;
         public static final int device_address=0x7f0a002f;
-        public static final int device_battery=0x7f0a0033;
-        public static final int device_name=0x7f0a0032;
+        public static final int device_battery=0x7f0a0034;
+        public static final int device_name=0x7f0a0033;
+        public static final int devicecontrol_restart=0x7f0a0032;
         public static final int editText=0x7f0a0020;
         public static final int gatt_services_list=0x7f0a0031;
         public static final int majorInput=0x7f0a0022;
@@ -229,11 +229,11 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
         public static final int measurepower_cancel=0x7f0a001a;
         public static final int measurepower_enter=0x7f0a0019;
         public static final int meaurepower_text=0x7f0a0025;
-        public static final int menu_connect=0x7f0a0035;
-        public static final int menu_disconnect=0x7f0a0036;
-        public static final int menu_refresh=0x7f0a0034;
-        public static final int menu_scan=0x7f0a0037;
-        public static final int menu_stop=0x7f0a0038;
+        public static final int menu_connect=0x7f0a0036;
+        public static final int menu_disconnect=0x7f0a0037;
+        public static final int menu_refresh=0x7f0a0035;
+        public static final int menu_scan=0x7f0a0038;
+        public static final int menu_stop=0x7f0a0039;
         public static final int minorInput=0x7f0a0024;
         public static final int minorLabel=0x7f0a0023;
         public static final int none=0x7f0a0002;
@@ -246,6 +246,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
         public static final int txpower_high=0x7f0a0029;
         public static final int txpower_low=0x7f0a0027;
         public static final int txpower_middle=0x7f0a0028;
+        public static final int txpower_radioGroup=0x7f0a0026;
         public static final int uuid=0x7f0a002c;
         public static final int uuid_cancel=0x7f0a002e;
         public static final int uuid_enter=0x7f0a002d;
