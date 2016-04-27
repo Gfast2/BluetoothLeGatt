@@ -12,6 +12,7 @@ public class char_advert_Activity extends Activity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
+        setTitle(R.string.advertInterval);
         super.onCreate(savedInstanceState);
         setContentView(R.layout.characteristic_advertinterval);
         Button btEnter = (Button) findViewById(R.id.advert_enter);

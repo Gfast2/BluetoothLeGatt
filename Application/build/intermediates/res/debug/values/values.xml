@@ -45,6 +45,9 @@
     <!-- From: file:/Users/sugao/AndroidStudioProjects/BluetoothLeGatt/Application/build/intermediates/exploded-aar/com.google.android.gms/play-services-basement/8.1.0/res/values/version.xml -->
     <eat-comment/>
     <integer name="google_play_services_version">8115000</integer>
+    <!-- From: file:/Users/sugao/AndroidStudioProjects/BluetoothLeGatt/Application/src/main/res/values/strings.xml -->
+    <eat-comment/>
+    <string name="advertInterval">Adertising Interval</string>
     <!-- From: file:/Users/sugao/AndroidStudioProjects/BluetoothLeGatt/Application/src/main/res/values/base-strings.xml -->
     <eat-comment/>
     <string name="app_name">BluetoothLeGatt</string>
@@ -90,10 +93,12 @@
     <!-- From: file:/Users/sugao/AndroidStudioProjects/BluetoothLeGatt/Application/src/main/res/values/strings.xml -->
     <eat-comment/>
     <string name="connected">Connected</string>
+    <string name="deploymode">Deploy Mode</string>
     <string name="disconnected">Disconnected</string>
     <string name="dummy_button">Dummy Button</string>
     <string name="dummy_content">DUMMY\nCONTENT</string>
     <string name="error_bluetooth_not_supported">Bluetooth not supported.</string>
+    <string name="ibeaconuuid">iBeacon UUID</string>
     <!-- From: file:/Users/sugao/AndroidStudioProjects/BluetoothLeGatt/Application/src/main/res/values/base-strings.xml -->
     <eat-comment/>
     <string name="intro_message">
@@ -111,6 +116,8 @@
     <string name="label_data">Data:</string>
     <string name="label_device_address">Device address:</string>
     <string name="label_state">State:</string>
+    <string name="majorMinor">Major &amp; Minor</string>
+    <string name="measurepower">Measure Power</string>
     <string name="menu_connect">Connect</string>
     <string name="menu_disconnect">Disconnect</string>
     <string name="menu_scan">Scan</string>
@@ -123,6 +130,7 @@
     <string name="title_activity_char_uuid_">char_uuid_Activity</string>
     <string name="title_activity_splash">Splash</string>
     <string name="title_devices">BLE Device Scan</string>
+    <string name="txpower">Tx Power</string>
     <string name="unknown_characteristic">Unknown characteristic</string>
     <string name="unknown_device">Unknown device</string>
     <string name="unknown_service">Unknown service</string>

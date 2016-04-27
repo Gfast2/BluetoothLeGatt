@@ -41,4 +41,12 @@
     <string name="title_activity_splash">Splash</string>
     <string name="dummy_button">Dummy Button</string>
     <string name="dummy_content">DUMMY\nCONTENT</string>
+
+    <!--Menu title-->
+    <string name="majorMinor">Major &amp; Minor</string>
+    <string name="ibeaconuuid">iBeacon UUID</string>
+    <string name="advertInterval">Adertising Interval</string>
+    <string name="deploymode">Deploy Mode</string>
+    <string name="measurepower">Measure Power</string>
+    <string name="txpower">Tx Power</string>
 </resources>

@@ -13,6 +13,7 @@ public class char_deploy_Activity extends Activity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        setTitle(R.string.deploymode);
         setContentView(R.layout.characteristic_deploymode);
         final Intent intent = new Intent(char_deploy_Activity.this, DeviceControlActivity.class);
         Button btEnter = (Button) findViewById(R.id.deploy_enter);

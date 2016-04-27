@@ -1,6 +1,7 @@
 package com.example.android.bluetoothlegatt;
 
 import android.app.Activity;
+import android.app.Dialog;
 import android.content.Intent;
 import android.os.Bundle;
 import android.os.Handler;
@@ -27,6 +28,7 @@ public class char_majorminor_Activity extends Activity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        setTitle(R.string.majorMinor);
         setContentView(R.layout.characteristic_majorminor); // setup the view.
 
         // Uncomment to read String format data from Intent.
@@ -40,7 +42,6 @@ public class char_majorminor_Activity extends Activity {
         final String EXTRA_DATA = "com.example.majorminoractivity.EXTRA_DATA";
         // intent to send back infomation.
         final Intent intent = new Intent(char_majorminor_Activity.this, DeviceControlActivity.class);
-
         new Thread(new Runnable() {
             @Override
             public void run() {
@@ -101,4 +102,6 @@ public class char_majorminor_Activity extends Activity {
         ret[0] = (byte) ((a >> 8) & 0xFF);
         return ret;
     }
+
+
 }

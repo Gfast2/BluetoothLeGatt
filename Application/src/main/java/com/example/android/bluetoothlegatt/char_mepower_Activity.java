@@ -14,6 +14,7 @@ public class char_mepower_Activity extends Activity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        setTitle(R.string.measurepower);
         setContentView(R.layout.characteristic_measurepower);
         Button btEnter = (Button) findViewById(R.id.measurepower_enter);
         Button btCancel = (Button) findViewById(R.id.measurepower_cancel);

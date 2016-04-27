@@ -12,6 +12,7 @@ public class char_txpower_Activity extends Activity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        setTitle(R.string.txpower);
         setContentView(R.layout.characteristic_txpower);
 
         Button btEnter = (Button) findViewById(R.id.txpower_enter);
