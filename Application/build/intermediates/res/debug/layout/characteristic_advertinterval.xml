@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RadioGroup
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/advert_radioGroup"
+        android:layout_marginLeft="50dp">
+
+        <RadioButton
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:text="100 milis"
+            android:id="@+id/advert_100"
+            android:layout_gravity="right"
+            android:layout_margin="@dimen/margin_small"
+            android:layout_marginLeft="@dimen/margin_small"
+            android:checked="false"
+            android:layout_marginTop="@dimen/margin_small" />
+        <RadioButton
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:text="200 milis"
+            android:id="@+id/advert_200"
+            android:layout_gravity="right"
+            android:layout_margin="@dimen/margin_small"
+            android:layout_marginLeft="@dimen/margin_small"
+            android:checked="false" />
+        <RadioButton
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:text="300 milis"
+            android:id="@+id/advert_300"
+            android:layout_gravity="right"
+            android:layout_margin="@dimen/margin_small"
+            android:layout_marginLeft="@dimen/margin_small"
+            android:checked="false" />
+        <RadioButton
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:text="400 milis"
+            android:id="@+id/advert_400"
+            android:layout_gravity="right"
+            android:layout_margin="@dimen/margin_small"
+            android:layout_marginLeft="@dimen/margin_small"
+            android:checked="false" />
+        <RadioButton
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:text="500 milis"
+            android:id="@+id/advert_500"
+            android:layout_gravity="right"
+            android:layout_margin="@dimen/margin_small"
+            android:layout_marginLeft="@dimen/margin_small"
+            android:checked="false" />
+        <RadioButton
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:text="600 milis"
+            android:id="@+id/advert_600"
+            android:layout_gravity="right"
+            android:layout_margin="@dimen/margin_small"
+            android:layout_marginLeft="@dimen/margin_small"
+            android:checked="false" />
+        <RadioButton
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:text="700 milis"
+            android:id="@+id/advert_700"
+            android:layout_gravity="right"
+            android:layout_margin="@dimen/margin_small"
+            android:layout_marginLeft="@dimen/margin_small"
+            android:checked="false" />
+        <RadioButton
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:text="800 milis"
+            android:id="@+id/advert_800"
+            android:layout_gravity="right"
+            android:layout_margin="@dimen/margin_small"
+            android:layout_marginLeft="@dimen/margin_small"
+            android:checked="false" />
+        <RadioButton
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:text="900 milis"
+            android:id="@+id/advert_900"
+            android:layout_gravity="right"
+            android:layout_margin="@dimen/margin_small"
+            android:layout_marginLeft="@dimen/margin_small"
+            android:checked="false" />
+
+    </RadioGroup>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp">
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Bestätigen"
+            android:id="@+id/advert_enter"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginLeft="@dimen/margin_large"
+            android:layout_marginRight="@dimen/margin_large"
+            android:layout_marginStart="100dp"
+            android:layout_centerVertical="true"
+            android:layout_alignParentStart="true" />
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Abbrechen"
+            android:id="@+id/advert_cancel"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginLeft="@dimen/margin_large"
+            android:layout_marginRight="@dimen/margin_large"
+            android:layout_centerVertical="true"
+            android:layout_toEndOf="@+id/advert_enter" />
+    </RelativeLayout>
+</LinearLayout><!-- From: file:/Users/sugao/AndroidStudioProjects/BluetoothLeGatt/Application/src/main/res/layout/characteristic_advertinterval.xml -->

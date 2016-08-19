@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="325dp"
+        android:id="@+id/map" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="125dp"
+        android:text="description:"
+        android:id="@+id/descrip" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Einstellung"
+        android:id="@+id/setting"
+        android:layout_margin="@dimen/margin_medium" />
+</LinearLayout><!-- From: file:/Users/sugao/AndroidStudioProjects/BluetoothLeGatt/Application/src/main/res/layout/beacon_property.xml -->
