@@ -142,6 +142,7 @@ public class DeviceControlActivity extends Activity {
                         "char_majorminor_Activity",
                         "char_uuid_Activity",
                         "char_advert_Activity",
+                        "char_name_Activity",
                         "char_deploy_Activity",
                         "char_mepower_Activity",
                         "char_txpower_Activity",
@@ -366,7 +367,7 @@ public class DeviceControlActivity extends Activity {
                             !charaString.contentEquals("Auth Code") &&
                             !charaString.contentEquals("Auth Timeout") &&
                             !charaString.contentEquals("Pair Password") &&
-                            !charaString.contentEquals("Device ID") &&
+//                            !charaString.contentEquals("Device ID") &&
                             !charaString.contentEquals("Auth Timeout") &&
                             !charaString.contentEquals("Control LED") &&
                             !charaString.contentEquals("Advertising Blink") &&

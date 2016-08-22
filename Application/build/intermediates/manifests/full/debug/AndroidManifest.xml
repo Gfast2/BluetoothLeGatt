@@ -87,6 +87,9 @@
             android:configChanges="orientation|keyboardHidden|screenSize"
             android:label="@string/title_activity_splash"
             android:theme="@style/FullscreenTheme" />
+        <activity
+            android:name="com.example.android.bluetoothlegatt.char_name_Activity"
+            android:label="@string/title_activity_char_name_" />
     </application>
 
 </manifest>
