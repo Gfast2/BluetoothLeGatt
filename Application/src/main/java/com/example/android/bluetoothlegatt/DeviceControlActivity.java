@@ -212,10 +212,11 @@ public class DeviceControlActivity extends Activity {
 
     // Coordinate the click behavior and the callback function un-sync nature
     private void clickCoordinator(Intent intent, byte[] data, int requestCode) {
-        intent.putExtra(EXTRA_READ, data);
+//        Log.d(TAG, "EXTRA_READ now: " + data[0] + " " + data[1] + " " + data[2] + " " + data[3]);
+        Log.d(TAG, "requestCode is: " + requestCode);
+        intent.putExtra(EXTRA_READ, data); // data now in decimal byte.
         startActivityForResult(intent, requestCode);
     }
-
 
     private void clearUI() {
         //mGattServicesList.setAdapter((SimpleExpandableListAdapter) null);
@@ -428,14 +429,18 @@ public class DeviceControlActivity extends Activity {
                 mBluetoothLeService.writeCustomCharacteristic(
                         "0000ffb3-0000-1000-8000-00805f9b34fb", intentData);
             } else if (requestCode == 3) {
+                byte[] intentData = data.getByteArrayExtra("name_data");
+                mBluetoothLeService.writeCustomCharacteristic(
+                        "0000ffb4-0000-1000-8000-00805f9b34fb", intentData);
+            } else if (requestCode == 4) {
                 byte[] intentData = data.getByteArrayExtra("deploy_data");
                 mBluetoothLeService.writeCustomCharacteristic(
                         "0000ffb5-0000-1000-8000-00805f9b34fb", intentData);
-            } else if (requestCode == 4) {
+            } else if (requestCode == 5) {
                 byte[] intentData = data.getByteArrayExtra("measurepower_data");
                 mBluetoothLeService.writeCustomCharacteristic(
                         "0000ffb8-0000-1000-8000-00805f9b34fb", intentData);
-            } else if (requestCode == 5) {
+            } else if (requestCode == 6) {
                 byte[] intentData = data.getByteArrayExtra("txpower_data");
                 mBluetoothLeService.writeCustomCharacteristic(
                         "0000ffb9-0000-1000-8000-00805f9b34fb", intentData);
