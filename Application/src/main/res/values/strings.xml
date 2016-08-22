@@ -49,4 +49,6 @@
     <string name="deploymode">Deploy Mode</string>
     <string name="measurepower">Measure Power</string>
     <string name="txpower">Tx Power</string>
+    <string name="beaconname">Name</string>
+    <string name="title_activity_char_name_">beaconName</string>
 </resources>

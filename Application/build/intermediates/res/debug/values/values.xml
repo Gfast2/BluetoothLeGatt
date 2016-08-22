@@ -57,6 +57,7 @@
     <string name="auth_google_play_services_client_google_display_name">Google</string>
     <!-- From: file:/Users/sugao/AndroidStudioProjects/BluetoothLeGatt/Application/src/main/res/values/strings.xml -->
     <eat-comment/>
+    <string name="beaconname">Name</string>
     <string name="ble_not_supported">BLE is not supported</string>
     <!-- From: file:/Users/sugao/AndroidStudioProjects/BluetoothLeGatt/Application/build/intermediates/exploded-aar/com.google.android.gms/play-services-basement/8.1.0/res/values/common_strings.xml -->
     <eat-comment/>
@@ -129,7 +130,7 @@
     <string name="title_activity_char_txpower_">char_txpower_Activity</string>
     <string name="title_activity_char_uuid_">char_uuid_Activity</string>
     <string name="title_activity_splash">Splash</string>
-    <string name="title_devices">BLE Device Scan</string>
+    <string name="title_devices">Pluslabbeacon</string>
     <string name="txpower">Tx Power</string>
     <string name="unknown_characteristic">Unknown characteristic</string>
     <string name="unknown_device">Unknown device</string>
