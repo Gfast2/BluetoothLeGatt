@@ -50,7 +50,7 @@
     <string name="advertInterval">Adertising Interval</string>
     <!-- From: file:/Users/sugao/AndroidStudioProjects/BluetoothLeGatt/Application/src/main/res/values/base-strings.xml -->
     <eat-comment/>
-    <string name="app_name">BluetoothLeGatt</string>
+    <string name="app_name">Pluslabbeacon</string>
     <!-- From: file:/Users/sugao/AndroidStudioProjects/BluetoothLeGatt/Application/build/intermediates/exploded-aar/com.google.android.gms/play-services-basement/8.1.0/res/values/auth_strings.xml -->
     <eat-comment/>
     <string name="auth_google_play_services_client_facebook_display_name">Facebook</string>
