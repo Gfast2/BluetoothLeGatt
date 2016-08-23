@@ -36,7 +36,7 @@ public class BeaconGattAttributes {
         attributes.put("0000ffb1-0000-1000-8000-00805f9b34fb", "Major & Minor");
         attributes.put("0000ffb2-0000-1000-8000-00805f9b34fb", "iBeacon UUID");
         attributes.put("0000ffb3-0000-1000-8000-00805f9b34fb", "Advertising Interval");
-        attributes.put("0000ffb4-0000-1000-8000-00805f9b34fb", "Device ID");
+        attributes.put("0000ffb4-0000-1000-8000-00805f9b34fb", "iBeacon Name");
         attributes.put("0000ffb5-0000-1000-8000-00805f9b34fb", "Deploy Mode");
         attributes.put("0000ffb8-0000-1000-8000-00805f9b34fb", "Measure Power");
         attributes.put("0000ffb9-0000-1000-8000-00805f9b34fb", "Tx Power");
