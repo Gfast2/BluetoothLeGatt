@@ -1,5 +1,6 @@
 package com.example.android.bluetoothlegatt;
 
+import android.bluetooth.BluetoothClass;
 import android.content.Intent;
 import android.os.Bundle;
 import android.app.Activity;
@@ -8,6 +9,10 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
+
+import java.io.ByteArrayOutputStream;
+import java.io.IOException;
+import java.util.Arrays;
 
 public class char_name_Activity extends Activity {
 
@@ -27,17 +32,16 @@ public class char_name_Activity extends Activity {
         // Intent to send back the info.
         final Intent intent = new Intent(char_name_Activity.this, DeviceControlActivity.class);
 
-        String deviceName = "Device name";
+
+        String deviceName = "Device name unknown";
 
         if (deviceID != null && deviceID.length > 0)
         {
             final StringBuilder stringBuilder = new StringBuilder(deviceID.length);
             for (byte chars : deviceID)
             {
-                // TODO: Here should parse the info to display with other format...
-                // The format now is Hex, to display is ASCII
-//                stringBuilder.append(String.format("%02X", chars));
-                stringBuilder.append(Character.toString((char) chars));
+                if(chars != 0)
+                    stringBuilder.append(Character.toString((char) chars));
             }
 
             // filter out white spaces. (Optional)
@@ -49,19 +53,47 @@ public class char_name_Activity extends Activity {
             stringBuilder.delete(j, stringBuilder.length());
 
             deviceName = stringBuilder.toString();
+
         }
 
         // Till here display the name of the thing.
         txName.setText(deviceName, TextView.BufferType.EDITABLE);
-
-
 
         btEnter.setOnClickListener(new View.OnClickListener()
         {
             @Override
             public void onClick(View v)
             {
-                // TODO: Add event to read and write Name of the device.
+
+                // Read the new value and fill the rest of the 2 byte array with 0.
+                String rawName = txName.getText().toString();
+
+                byte[] nameByteFinal = rawName.getBytes();
+
+                byte[] b = new byte[ 16 - nameByteFinal.length ];
+                Arrays.fill( b, (byte) 0 );
+
+                ByteArrayOutputStream outputStream = new ByteArrayOutputStream( );
+
+                try {
+                    outputStream.write( nameByteFinal );
+                } catch (IOException e) {
+                    e.printStackTrace();
+                }
+
+                try {
+                    outputStream.write( b );
+                } catch (IOException e) {
+                    e.printStackTrace();
+                }
+
+                nameByteFinal = outputStream.toByteArray();
+
+                // Send back new set values.
+                Intent intent = new Intent(char_name_Activity.this, DeviceControlActivity.class);
+                intent.putExtra("name_data", nameByteFinal);
+                setResult(Activity.RESULT_OK, intent);
+
                 finish();
             }
         });

@@ -430,6 +430,13 @@ public class DeviceControlActivity extends Activity {
                         "0000ffb3-0000-1000-8000-00805f9b34fb", intentData);
             } else if (requestCode == 3) {
                 byte[] intentData = data.getByteArrayExtra("name_data");
+                /*Log.d(TAG, "The name_date is: "
+                        + intentData[0]
+                        + intentData[1]
+                        + intentData[2]
+                        + intentData[3]
+                );*/
+                Log.d(TAG, "The byte array size is: " + intentData.length);
                 mBluetoothLeService.writeCustomCharacteristic(
                         "0000ffb4-0000-1000-8000-00805f9b34fb", intentData);
             } else if (requestCode == 4) {
