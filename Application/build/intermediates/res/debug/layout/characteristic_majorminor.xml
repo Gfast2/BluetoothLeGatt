@@ -5,6 +5,10 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:weightSum="1"
+    android:paddingBottom="16px"
+    android:paddingLeft="16px"
+    android:paddingRight="16px"
+    android:paddingTop="16px"
     tools:context="com.example.android.bluetoothlegatt.char_majorminor_Activity">
 
     <TextView
@@ -12,15 +16,14 @@
         android:layout_height="wrap_content"
         android:textAppearance="?android:attr/textAppearanceLarge"
         android:text="Major"
-        android:id="@+id/majorLabel"
-        android:layout_marginLeft="@dimen/margin_medium"
-        android:layout_marginTop="@dimen/margin_medium" />
+        android:id="@+id/majorLabel" />
 
     <EditText
         android:layout_height="wrap_content"
         android:id="@+id/majorInput"
-        android:layout_marginLeft="@dimen/margin_medium"
-        android:layout_width="345dp"
+        android:layout_width="match_parent"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
         android:numeric="integer"/>
     <TextView
         android:layout_width="wrap_content"
@@ -28,19 +31,18 @@
         android:textAppearance="?android:attr/textAppearanceLarge"
         android:text="Minor"
         android:id="@+id/minorLabel"
-        android:layout_marginLeft="@dimen/margin_medium"
         android:layout_marginTop="@dimen/margin_medium" />
 
     <EditText
         android:layout_height="wrap_content"
         android:id="@+id/minorInput"
-        android:layout_marginLeft="@dimen/margin_medium"
-        android:layout_width="345dp"
+        android:layout_width="match_parent"
+        android:layout_alignParentTop="true"
         android:numeric="integer"/>
 
     <RelativeLayout
         android:layout_width="match_parent"
-        android:layout_height="141dp">
+        android:layout_height="140dp">
         <Button
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"

@@ -31,8 +31,20 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="12f270b2-9134-4f53-9ddf-ed6004ee4c6b" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/2.2.1/taskArtifacts/cache.properties.lock" afterPath="$PROJECT_DIR$/.gradle/2.2.1/taskArtifacts/cache.properties.lock" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/2.2.1/taskArtifacts/fileHashes.bin" afterPath="$PROJECT_DIR$/.gradle/2.2.1/taskArtifacts/fileHashes.bin" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/2.2.1/taskArtifacts/fileSnapshots.bin" afterPath="$PROJECT_DIR$/.gradle/2.2.1/taskArtifacts/fileSnapshots.bin" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/2.2.1/taskArtifacts/taskArtifacts.bin" afterPath="$PROJECT_DIR$/.gradle/2.2.1/taskArtifacts/taskArtifacts.bin" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Application/build/intermediates/resources/resources-debug.ap_" afterPath="$PROJECT_DIR$/Application/build/intermediates/resources/resources-debug.ap_" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Application/build/outputs/apk/Application-debug-unaligned.apk" afterPath="$PROJECT_DIR$/Application/build/outputs/apk/Application-debug-unaligned.apk" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Application/build/outputs/apk/Application-debug.apk" afterPath="$PROJECT_DIR$/Application/build/outputs/apk/Application-debug.apk" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Application/Application.iml" afterPath="$PROJECT_DIR$/Application/Application.iml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Application/build/intermediates/res/debug/layout/characteristic_deploymode.xml" afterPath="$PROJECT_DIR$/Application/build/intermediates/res/debug/layout/characteristic_deploymode.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Application/build/intermediates/res/debug/layout/characteristic_majorminor.xml" afterPath="$PROJECT_DIR$/Application/build/intermediates/res/debug/layout/characteristic_majorminor.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Application/build/intermediates/res/debug/layout/gatt_services_characteristics.xml" afterPath="$PROJECT_DIR$/Application/build/intermediates/res/debug/layout/gatt_services_characteristics.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Application/src/main/res/layout/characteristic_deploymode.xml" afterPath="$PROJECT_DIR$/Application/src/main/res/layout/characteristic_deploymode.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Application/src/main/res/layout/characteristic_majorminor.xml" afterPath="$PROJECT_DIR$/Application/src/main/res/layout/characteristic_majorminor.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Application/src/main/res/layout/gatt_services_characteristics.xml" afterPath="$PROJECT_DIR$/Application/src/main/res/layout/gatt_services_characteristics.xml" />
     </list>
     <ignored path="BluetoothLeGatt.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -1411,11 +1423,8 @@
         <option value="$PROJECT_DIR$/Application/src/main/java/com/example/android/bluetoothlegatt/Splash.java" />
         <option value="$PROJECT_DIR$/Application/src/main/res/layout/activity_splash.xml" />
         <option value="$PROJECT_DIR$/Application/src/main/res/layout/characteristic_advertinterval.xml" />
-        <option value="$PROJECT_DIR$/Application/src/main/res/layout/characteristic_deploymode.xml" />
         <option value="$PROJECT_DIR$/Application/src/main/res/layout/characteristic_measurepower.xml" />
         <option value="$PROJECT_DIR$/Application/src/main/res/layout/characteristic_txpower.xml" />
-        <option value="$PROJECT_DIR$/Application/src/main/res/layout/gatt_services_characteristics.xml" />
-        <option value="$PROJECT_DIR$/Application/src/main/res/layout/characteristic_majorminor.xml" />
         <option value="$PROJECT_DIR$/Application/src/main/java/com/example/android/bluetoothlegatt/char_majorminor_Activity.java" />
         <option value="$PROJECT_DIR$/Application/src/main/java/com/example/android/bluetoothlegatt/char_uuid_Activity.java" />
         <option value="$PROJECT_DIR$/Application/src/main/java/com/example/android/bluetoothlegatt/char_advert_Activity.java" />
@@ -1432,6 +1441,9 @@
         <option value="$PROJECT_DIR$/Application/src/main/java/com/example/android/bluetoothlegatt/BeaconGattAttributes.java" />
         <option value="$PROJECT_DIR$/Application/src/main/AndroidManifest.xml" />
         <option value="$PROJECT_DIR$/Application/src/main/res/values/base-strings.xml" />
+        <option value="$PROJECT_DIR$/Application/src/main/res/layout/gatt_services_characteristics.xml" />
+        <option value="$PROJECT_DIR$/Application/src/main/res/layout/characteristic_deploymode.xml" />
+        <option value="$PROJECT_DIR$/Application/src/main/res/layout/characteristic_majorminor.xml" />
       </list>
     </option>
   </component>
@@ -1452,7 +1464,7 @@
     <ConfirmationsSetting value="0" id="Remove" />
   </component>
   <component name="ProjectView">
-    <navigator currentView="Scope" currentSubView="Project Files" proportions="" version="1">
+    <navigator currentView="AndroidView" proportions="" version="1">
       <flattenPackages />
       <showMembers />
       <showModules />
@@ -1466,9 +1478,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane">
-        <subPane />
-      </pane>
       <pane id="AndroidView">
         <subPane>
           <PATH>
@@ -1490,95 +1499,27 @@
               <option name="myItemId" value="Application" />
               <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidModuleNode" />
             </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="res" />
-              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidResFolderNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="values" />
-              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidResFolderTypeNode" />
+          </PATH>
+        </subPane>
+      </pane>
+      <pane id="PackagesPane">
+        <subPane />
+      </pane>
+      <pane id="Scope">
+        <subPane subId="Problems" />
+        <subPane subId="Production">
+          <PATH>
+            <PATH_ELEMENT USER_OBJECT="Root">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
             </PATH_ELEMENT>
           </PATH>
+        </subPane>
+        <subPane subId="Project Files">
           <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Pluslabbeacon" />
-              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Application" />
-              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidModuleNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="res" />
-              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidResFolderNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Pluslabbeacon" />
-              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Application" />
-              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidModuleNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="res" />
-              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidResFolderNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="layout" />
-              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidResFolderTypeNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Pluslabbeacon" />
-              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Application" />
-              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidModuleNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="res" />
-              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidResFolderNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="drawable" />
-              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidResFolderTypeNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Pluslabbeacon" />
-              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Application" />
-              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidModuleNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidSourceTypeNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="bluetoothlegatt" />
-              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidPsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Pluslabbeacon" />
-              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Application" />
-              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidModuleNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="manifests" />
-              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidManifestsGroupNode" />
+            <PATH_ELEMENT USER_OBJECT="Root">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
             </PATH_ELEMENT>
           </PATH>
         </subPane>
@@ -1604,153 +1545,6 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scope">
-        <subPane subId="Problems" />
-        <subPane subId="Production">
-          <PATH>
-            <PATH_ELEMENT USER_OBJECT="Root">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-          </PATH>
-        </subPane>
-        <subPane subId="Project Files">
-          <PATH>
-            <PATH_ELEMENT USER_OBJECT="Root">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT USER_OBJECT="BluetoothLeGatt">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT USER_OBJECT="Root">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT USER_OBJECT="Application">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT USER_OBJECT="Application">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT USER_OBJECT="Root">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT USER_OBJECT="Application">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT USER_OBJECT="Application">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT USER_OBJECT="src/main">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT USER_OBJECT="Root">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT USER_OBJECT="Application">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT USER_OBJECT="Application">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT USER_OBJECT="src/main">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT USER_OBJECT="res">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT USER_OBJECT="Root">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT USER_OBJECT="Application">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT USER_OBJECT="Application">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT USER_OBJECT="src/main">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT USER_OBJECT="res">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT USER_OBJECT="layout">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT USER_OBJECT="Root">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT USER_OBJECT="Application">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT USER_OBJECT="Application">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT USER_OBJECT="src/main">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT USER_OBJECT="java">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT USER_OBJECT="com/example/android/bluetoothlegatt">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT USER_OBJECT="Root">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT USER_OBJECT="Application">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT USER_OBJECT="Application">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT USER_OBJECT="build">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-          </PATH>
-        </subPane>
-      </pane>
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -1765,8 +1559,8 @@
     <property name="device.picker.selection" value="EP7333C4AY" />
     <property name="ChangesBrowser.SHOW_FLATTEN" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-    <property name="UI_DESIGNER_EDITOR_MODE.UIDesignerToolWindowManager2.WIDTH" value="444" />
-    <property name="SearchEverywhereHistoryKey" value="app_name&#9;PSI&#9;JAVA://com.example.android.bluetoothlegatt.R.string#app_name&#10;char_txpo&#9;FILE&#9;file:///Users/sugao/AndroidStudioProjects/BluetoothLeGatt/Application/src/main/java/com/example/android/bluetoothlegatt/char_txpower_Activity.java&#10;char_mepo&#9;FILE&#9;file:///Users/sugao/AndroidStudioProjects/BluetoothLeGatt/Application/src/main/java/com/example/android/bluetoothlegatt/char_mepower_Activity.java&#10;char_depl&#9;FILE&#9;file:///Users/sugao/AndroidStudioProjects/BluetoothLeGatt/Application/src/main/java/com/example/android/bluetoothlegatt/char_deploy_Activity.java&#10;char_adver&#9;FILE&#9;file:///Users/sugao/AndroidStudioProjects/BluetoothLeGatt/Application/src/main/java/com/example/android/bluetoothlegatt/char_advert_Activity.java&#10;char_uuid&#9;FILE&#9;file:///Users/sugao/AndroidStudioProjects/BluetoothLeGatt/Application/src/main/java/com/example/android/bluetoothlegatt/char_uuid_Activity.java&#10;strings&#9;FILE&#9;file:///Users/sugao/AndroidStudioProjects/BluetoothLeGatt/Application/src/main/res/values/strings.xml&#10;major&#9;FILE&#9;file:///Users/sugao/AndroidStudioProjects/BluetoothLeGatt/Application/src/main/java/com/example/android/bluetoothlegatt/char_majorminor_Activity.java&#10;majorminor&#9;FILE&#9;file:///Users/sugao/AndroidStudioProjects/BluetoothLeGatt/Application/src/main/res/layout/characteristic_majorminor.xml&#10;characteristic_uui&#9;FILE&#9;file:///Users/sugao/AndroidStudioProjects/BluetoothLeGatt/Application/src/main/res/layout/characteristic_uuid.xml&#10;char_uui&#9;FILE&#9;file:///Users/sugao/AndroidStudioProjects/BluetoothLeGatt/Application/src/main/java/com/example/android/bluetoothlegatt/char_uuid_Activity.java&#10;BLE&#9;FILE&#9;file:///Users/sugao/AndroidStudioProjects/BluetoothLeGatt/Application/src/main/java/com/example/android/bluetoothlegatt/BluetoothLeService.java&#10;char_tx&#9;FILE&#9;file:///Users/sugao/AndroidStudioProjects/BluetoothLeGatt/Application/src/main/java/com/example/android/bluetoothlegatt/char_txpower_Activity.java&#10;char_me&#9;FILE&#9;file:///Users/sugao/AndroidStudioProjects/BluetoothLeGatt/Application/src/main/java/com/example/android/bluetoothlegatt/char_mepower_Activity.java&#10;deplo&#9;FILE&#9;file:///Users/sugao/AndroidStudioProjects/BluetoothLeGatt/Application/src/main/res/layout/characteristic_deploymode.xml&#10;deploy&#9;FILE&#9;file:///Users/sugao/AndroidStudioProjects/BluetoothLeGatt/Application/src/main/java/com/example/android/bluetoothlegatt/char_deploy_Activity.java&#10;char_advert&#9;FILE&#9;file:///Users/sugao/AndroidStudioProjects/BluetoothLeGatt/Application/src/main/java/com/example/android/bluetoothlegatt/char_advert_Activity.java&#10;advert&#9;FILE&#9;file:///Users/sugao/AndroidStudioProjects/BluetoothLeGatt/Application/src/main/res/layout/characteristic_advertinterval.xml&#10;control&#9;FILE&#9;file:///Users/sugao/AndroidStudioProjects/BluetoothLeGatt/Application/src/main/java/com/example/android/bluetoothlegatt/DeviceControlActivity.java&#10;char_major&#9;FILE&#9;file:///Users/sugao/AndroidStudioProjects/BluetoothLeGatt/Application/src/main/java/com/example/android/bluetoothlegatt/char_majorminor_Activity.java&#10;bluetoo&#9;FILE&#9;file:///Users/sugao/AndroidStudioProjects/BluetoothLeGatt/Application/src/main/java/com/example/android/bluetoothlegatt/BluetoothLeService.java&#10;beacon&#9;FILE&#9;file:///Users/sugao/AndroidStudioProjects/BluetoothLeGatt/Application/src/main/java/com/example/android/bluetoothlegatt/BeaconGattAttributes.java&#10;scan&#9;FILE&#9;file:///Users/sugao/AndroidStudioProjects/BluetoothLeGatt/Application/src/main/java/com/example/android/bluetoothlegatt/DeviceScanActivity.java&#10;service&#9;FILE&#9;file:///Users/sugao/AndroidStudioProjects/BluetoothLeGatt/Application/src/main/java/com/example/android/bluetoothlegatt/BluetoothLeService.java&#10;ScanAc&#9;FILE&#9;file:///Users/sugao/AndroidStudioProjects/BluetoothLeGatt/Application/src/main/java/com/example/android/bluetoothlegatt/DeviceScanActivity.java&#10;characteristic_me&#9;FILE&#9;file:///Users/sugao/AndroidStudioProjects/BluetoothLeGatt/Application/src/main/res/layout/characteristic_measurepower.xml&#10;tx&#9;FILE&#9;file:///Users/sugao/AndroidStudioProjects/BluetoothLeGatt/Application/src/main/res/layout/characteristic_txpower.xml&#10;char_deploy&#9;FILE&#9;file:///Users/sugao/AndroidStudioProjects/BluetoothLeGatt/Application/src/main/java/com/example/android/bluetoothlegatt/char_deploy_Activity.java&#10;characteristic_de&#9;FILE&#9;file:///Users/sugao/AndroidStudioProjects/BluetoothLeGatt/Application/src/main/res/layout/characteristic_deploymode.xml&#10;depl&#9;FILE&#9;file:///Users/sugao/AndroidStudioProjects/BluetoothLeGatt/Application/src/main/res/layout/characteristic_deploymode.xml&#10;uuid&#9;FILE&#9;file:///Users/sugao/AndroidStudioProjects/BluetoothLeGatt/Application/src/main/res/layout/characteristic_uuid.xml&#10;contro&#9;FILE&#9;file:///Users/sugao/AndroidStudioProjects/BluetoothLeGatt/Application/src/main/java/com/example/android/bluetoothlegatt/DeviceControlActivity.java&#10;bluetoothLe&#9;FILE&#9;file:///Users/sugao/AndroidStudioProjects/BluetoothLeGatt/Application/src/main/java/com/example/android/bluetoothlegatt/BluetoothLeService.java&#10;no_data&#9;PSI&#9;JAVA://com.example.android.bluetoothlegatt.R.string#no_data" />
+    <property name="UI_DESIGNER_EDITOR_MODE.UIDesignerToolWindowManager2.WIDTH" value="348" />
+    <property name="SearchEverywhereHistoryKey" value="devicecontrol_restart&#9;PSI&#9;JAVA://com.example.android.bluetoothlegatt.R.id#devicecontrol_restart&#10;app_name&#9;PSI&#9;JAVA://com.example.android.bluetoothlegatt.R.string#app_name&#10;char_txpo&#9;FILE&#9;file:///Users/sugao/AndroidStudioProjects/BluetoothLeGatt/Application/src/main/java/com/example/android/bluetoothlegatt/char_txpower_Activity.java&#10;char_mepo&#9;FILE&#9;file:///Users/sugao/AndroidStudioProjects/BluetoothLeGatt/Application/src/main/java/com/example/android/bluetoothlegatt/char_mepower_Activity.java&#10;char_depl&#9;FILE&#9;file:///Users/sugao/AndroidStudioProjects/BluetoothLeGatt/Application/src/main/java/com/example/android/bluetoothlegatt/char_deploy_Activity.java&#10;char_adver&#9;FILE&#9;file:///Users/sugao/AndroidStudioProjects/BluetoothLeGatt/Application/src/main/java/com/example/android/bluetoothlegatt/char_advert_Activity.java&#10;char_uuid&#9;FILE&#9;file:///Users/sugao/AndroidStudioProjects/BluetoothLeGatt/Application/src/main/java/com/example/android/bluetoothlegatt/char_uuid_Activity.java&#10;strings&#9;FILE&#9;file:///Users/sugao/AndroidStudioProjects/BluetoothLeGatt/Application/src/main/res/values/strings.xml&#10;major&#9;FILE&#9;file:///Users/sugao/AndroidStudioProjects/BluetoothLeGatt/Application/src/main/java/com/example/android/bluetoothlegatt/char_majorminor_Activity.java&#10;majorminor&#9;FILE&#9;file:///Users/sugao/AndroidStudioProjects/BluetoothLeGatt/Application/src/main/res/layout/characteristic_majorminor.xml&#10;characteristic_uui&#9;FILE&#9;file:///Users/sugao/AndroidStudioProjects/BluetoothLeGatt/Application/src/main/res/layout/characteristic_uuid.xml&#10;char_uui&#9;FILE&#9;file:///Users/sugao/AndroidStudioProjects/BluetoothLeGatt/Application/src/main/java/com/example/android/bluetoothlegatt/char_uuid_Activity.java&#10;BLE&#9;FILE&#9;file:///Users/sugao/AndroidStudioProjects/BluetoothLeGatt/Application/src/main/java/com/example/android/bluetoothlegatt/BluetoothLeService.java&#10;char_tx&#9;FILE&#9;file:///Users/sugao/AndroidStudioProjects/BluetoothLeGatt/Application/src/main/java/com/example/android/bluetoothlegatt/char_txpower_Activity.java&#10;char_me&#9;FILE&#9;file:///Users/sugao/AndroidStudioProjects/BluetoothLeGatt/Application/src/main/java/com/example/android/bluetoothlegatt/char_mepower_Activity.java&#10;deplo&#9;FILE&#9;file:///Users/sugao/AndroidStudioProjects/BluetoothLeGatt/Application/src/main/res/layout/characteristic_deploymode.xml&#10;deploy&#9;FILE&#9;file:///Users/sugao/AndroidStudioProjects/BluetoothLeGatt/Application/src/main/java/com/example/android/bluetoothlegatt/char_deploy_Activity.java&#10;char_advert&#9;FILE&#9;file:///Users/sugao/AndroidStudioProjects/BluetoothLeGatt/Application/src/main/java/com/example/android/bluetoothlegatt/char_advert_Activity.java&#10;advert&#9;FILE&#9;file:///Users/sugao/AndroidStudioProjects/BluetoothLeGatt/Application/src/main/res/layout/characteristic_advertinterval.xml&#10;control&#9;FILE&#9;file:///Users/sugao/AndroidStudioProjects/BluetoothLeGatt/Application/src/main/java/com/example/android/bluetoothlegatt/DeviceControlActivity.java&#10;char_major&#9;FILE&#9;file:///Users/sugao/AndroidStudioProjects/BluetoothLeGatt/Application/src/main/java/com/example/android/bluetoothlegatt/char_majorminor_Activity.java&#10;bluetoo&#9;FILE&#9;file:///Users/sugao/AndroidStudioProjects/BluetoothLeGatt/Application/src/main/java/com/example/android/bluetoothlegatt/BluetoothLeService.java&#10;beacon&#9;FILE&#9;file:///Users/sugao/AndroidStudioProjects/BluetoothLeGatt/Application/src/main/java/com/example/android/bluetoothlegatt/BeaconGattAttributes.java&#10;scan&#9;FILE&#9;file:///Users/sugao/AndroidStudioProjects/BluetoothLeGatt/Application/src/main/java/com/example/android/bluetoothlegatt/DeviceScanActivity.java&#10;service&#9;FILE&#9;file:///Users/sugao/AndroidStudioProjects/BluetoothLeGatt/Application/src/main/java/com/example/android/bluetoothlegatt/BluetoothLeService.java&#10;ScanAc&#9;FILE&#9;file:///Users/sugao/AndroidStudioProjects/BluetoothLeGatt/Application/src/main/java/com/example/android/bluetoothlegatt/DeviceScanActivity.java&#10;characteristic_me&#9;FILE&#9;file:///Users/sugao/AndroidStudioProjects/BluetoothLeGatt/Application/src/main/res/layout/characteristic_measurepower.xml&#10;tx&#9;FILE&#9;file:///Users/sugao/AndroidStudioProjects/BluetoothLeGatt/Application/src/main/res/layout/characteristic_txpower.xml&#10;char_deploy&#9;FILE&#9;file:///Users/sugao/AndroidStudioProjects/BluetoothLeGatt/Application/src/main/java/com/example/android/bluetoothlegatt/char_deploy_Activity.java&#10;characteristic_de&#9;FILE&#9;file:///Users/sugao/AndroidStudioProjects/BluetoothLeGatt/Application/src/main/res/layout/characteristic_deploymode.xml&#10;depl&#9;FILE&#9;file:///Users/sugao/AndroidStudioProjects/BluetoothLeGatt/Application/src/main/res/layout/characteristic_deploymode.xml&#10;uuid&#9;FILE&#9;file:///Users/sugao/AndroidStudioProjects/BluetoothLeGatt/Application/src/main/res/layout/characteristic_uuid.xml&#10;contro&#9;FILE&#9;file:///Users/sugao/AndroidStudioProjects/BluetoothLeGatt/Application/src/main/java/com/example/android/bluetoothlegatt/DeviceControlActivity.java&#10;bluetoothLe&#9;FILE&#9;file:///Users/sugao/AndroidStudioProjects/BluetoothLeGatt/Application/src/main/java/com/example/android/bluetoothlegatt/BluetoothLeService.java&#10;no_data&#9;PSI&#9;JAVA://com.example.android.bluetoothlegatt.R.string#no_data" />
     <property name="UI_DESIGNER_EDITOR_MODE.PaletteToolWindowManager.SHOW" value="true" />
     <property name="full.screen.before.presentation.mode" value="false" />
     <property name="android.project.structure.last.selected" value="SDK Location" />
@@ -2280,7 +2074,7 @@
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32943678" sideWeight="0.4914803" order="12" side_tool="false" content_ui="tabs" />
       <window_info id="Android Model" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32855093" sideWeight="0.5" order="5" side_tool="true" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Android Monitor" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.39159" sideWeight="0.4878049" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Android Monitor" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24704337" sideWeight="0.4878049" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Captures" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.53453773" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.23464373" sideWeight="0.5121951" order="8" side_tool="true" content_ui="tabs" />
@@ -2293,13 +2087,13 @@
       <window_info id="Gradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32783356" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32943678" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24861" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.23485968" sideWeight="0.49076518" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.26070902" sideWeight="0.49076518" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3285151" sideWeight="0.46946284" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24980143" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.20913108" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.20913108" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32720104" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
@@ -2421,44 +2215,34 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/Application/src/main/res/layout/beacon_property2.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.13953489">
-          <caret line="8" column="56" selection-start-line="8" selection-start-column="56" selection-end-line="8" selection-end-column="56" />
-        </state>
-      </provider>
+    <entry file="file://$PROJECT_DIR$/Application/src/main/res/layout/characteristic_uuid.xml">
       <provider editor-type-id="android-designer">
         <state />
       </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Application/src/main/res/layout/characteristic_uuid.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
-      </provider>
-      <provider editor-type-id="android-designer">
-        <state />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Application/src/main/res/layout/characteristic_measurepower.xml">
+      <provider editor-type-id="android-designer">
+        <state />
+      </provider>
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
-      </provider>
-      <provider editor-type-id="android-designer">
-        <state />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Application/src/main/res/layout/characteristic_txpower.xml">
+      <provider editor-type-id="android-designer">
+        <state />
+      </provider>
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
-      </provider>
-      <provider editor-type-id="android-designer">
-        <state />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Application/src/main/res/menu/gatt_services.xml">
@@ -2531,10 +2315,10 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Application/src/main/res/drawable-hdpi/tile.9.png">
-      <provider editor-type-id="images">
+      <provider selected="true" editor-type-id="ninepatcheditor">
         <state />
       </provider>
-      <provider selected="true" editor-type-id="ninepatcheditor">
+      <provider editor-type-id="images">
         <state />
       </provider>
     </entry>
@@ -2543,44 +2327,14 @@
         <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Application/src/main/res/layout/activity_splash.xml">
-      <provider editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-6.25">
-          <caret line="10" column="34" selection-start-line="10" selection-start-column="34" selection-end-line="10" selection-end-column="34" />
-        </state>
-      </provider>
-      <provider selected="true" editor-type-id="android-designer">
+    <entry file="file://$PROJECT_DIR$/Application/src/main/res/layout/characteristic_advertinterval.xml">
+      <provider editor-type-id="android-designer">
         <state />
       </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Application/src/main/res/layout/characteristic_advertinterval.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.33536586">
           <caret line="18" column="59" selection-start-line="18" selection-start-column="59" selection-end-line="18" selection-end-column="59" />
         </state>
-      </provider>
-      <provider editor-type-id="android-designer">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Application/src/main/res/layout/characteristic_deploymode.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-0.5334572">
-          <caret line="7" column="27" selection-start-line="7" selection-start-column="27" selection-end-line="7" selection-end-column="27" />
-        </state>
-      </provider>
-      <provider editor-type-id="android-designer">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Application/src/main/res/layout/characteristic_measurepower.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.39033458">
-          <caret line="14" column="41" selection-start-line="14" selection-start-column="41" selection-end-line="14" selection-end-column="41" />
-        </state>
-      </provider>
-      <provider editor-type-id="android-designer">
-        <state />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Application/src/main/java/com/example/android/bluetoothlegatt/char_majorminor_Activity.java">
@@ -2588,26 +2342,6 @@
         <state vertical-scroll-proportion="0.41666666">
           <caret line="30" column="8" selection-start-line="30" selection-start-column="8" selection-end-line="30" selection-end-column="38" />
         </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Application/src/main/res/layout/characteristic_majorminor.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.917782">
-          <caret line="32" column="0" selection-start-line="32" selection-start-column="0" selection-end-line="32" selection-end-column="0" />
-        </state>
-      </provider>
-      <provider editor-type-id="android-designer">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Application/src/main/res/layout/gatt_services_characteristics.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.2581262">
-          <caret line="9" column="72" selection-start-line="9" selection-start-column="31" selection-end-line="9" selection-end-column="72" />
-        </state>
-      </provider>
-      <provider editor-type-id="android-designer">
-        <state />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Application/src/main/java/com/example/android/bluetoothlegatt/char_advert_Activity.java">
@@ -2679,14 +2413,13 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Application/src/main/res/layout/listitem_device.xml">
+      <provider selected="true" editor-type-id="android-designer">
+        <state />
+      </provider>
       <provider editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="18" column="51" selection-start-line="18" selection-start-column="51" selection-end-line="18" selection-end-column="51" />
-          <folding />
         </state>
-      </provider>
-      <provider selected="true" editor-type-id="android-designer">
-        <state />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Application/src/main/java/com/example/android/bluetoothlegatt/beacon_property.java">
@@ -2704,53 +2437,36 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Application/src/main/res/layout/characteristic_txpower.xml">
-      <provider editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="40" column="31" selection-start-line="40" selection-start-column="31" selection-end-line="40" selection-end-column="31" />
-          <folding />
-        </state>
-      </provider>
       <provider selected="true" editor-type-id="android-designer">
         <state />
       </provider>
+      <provider editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="40" column="31" selection-start-line="40" selection-start-column="31" selection-end-line="40" selection-end-column="31" />
+        </state>
+      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Application/src/main/res/layout/characteristic_uuid.xml">
+      <provider editor-type-id="android-designer">
+        <state />
+      </provider>
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.6617647">
           <caret line="30" column="48" selection-start-line="30" selection-start-column="48" selection-end-line="30" selection-end-column="48" />
-          <folding />
         </state>
-      </provider>
-      <provider editor-type-id="android-designer">
-        <state />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Application/src/main/java/com/example/android/bluetoothlegatt/BeaconGattAttributes.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.37931034">
           <caret line="35" column="43" selection-start-line="35" selection-start-column="43" selection-end-line="35" selection-end-column="43" />
-          <folding />
         </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Application/src/main/res/layout/characteristic_name.xml">
-      <provider editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="43" column="0" selection-start-line="43" selection-start-column="0" selection-end-line="43" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-      <provider selected="true" editor-type-id="android-designer">
-        <state />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Application/src/main/java/com/example/android/bluetoothlegatt/char_txpower_Activity.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.03448276">
           <caret line="17" column="29" selection-start-line="17" selection-start-column="29" selection-end-line="17" selection-end-column="29" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -2758,23 +2474,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.55172414">
           <caret line="96" column="25" selection-start-line="96" selection-start-column="25" selection-end-line="96" selection-end-column="25" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#2129#3365#0" expanded="true" />
-            <element signature="e#3364#3365#0" expanded="true" />
-            <element signature="e#3405#3562#0" expanded="true" />
-            <element signature="e#3561#3562#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Application/src/main/java/com/example/android/bluetoothlegatt/DeviceControlActivity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.13793103">
-          <caret line="438" column="50" selection-start-line="438" selection-start-column="50" selection-end-line="438" selection-end-column="50" />
-          <folding>
-            <marker date="1471944111000" expanded="false" signature="8339:10385" placeholder="..." />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -2782,19 +2481,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.6896552">
           <caret line="67" column="11" selection-start-line="67" selection-start-column="11" selection-end-line="67" selection-end-column="11" />
-          <folding>
-            <element signature="e#2428#4759#0" expanded="true" />
-            <element signature="e#4758#4759#0" expanded="true" />
-            <marker date="1461751965000" expanded="false" signature="1615:1838" placeholder="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Application/build/generated/source/r/debug/com/example/android/bluetoothlegatt/R.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.3522976">
-          <caret line="280" column="32" selection-start-line="280" selection-start-column="32" selection-end-line="280" selection-end-column="32" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -2810,7 +2496,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="1.640625">
           <caret line="42" column="56" selection-start-line="42" selection-start-column="56" selection-end-line="42" selection-end-column="56" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -2818,7 +2503,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.5862069">
           <caret line="19" column="0" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -2826,7 +2510,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.10948905">
           <caret line="3" column="0" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -2836,6 +2519,119 @@
           <caret line="57" column="11" selection-start-line="57" selection-start-column="11" selection-end-line="57" selection-end-column="11" />
           <folding>
             <element signature="e#1559#1577#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Application/build/generated/source/r/debug/com/example/android/bluetoothlegatt/R.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.34942085">
+          <caret line="220" column="32" selection-start-line="220" selection-start-column="32" selection-end-line="220" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Application/src/main/res/layout/beacon_property2.xml">
+      <provider editor-type-id="android-designer">
+        <state />
+      </provider>
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.24390244">
+          <caret line="8" column="56" selection-start-line="8" selection-start-column="56" selection-end-line="8" selection-end-column="56" />
+          <folding>
+            <element signature="e#450#483#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Application/src/main/res/layout/gatt_services_characteristics.xml">
+      <provider editor-type-id="android-designer">
+        <state />
+      </provider>
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.54268295">
+          <caret line="70" column="47" selection-start-line="70" selection-start-column="47" selection-end-line="70" selection-end-column="47" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Application/src/main/java/com/example/android/bluetoothlegatt/DeviceControlActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.33204633">
+          <caret line="230" column="75" selection-start-line="230" selection-start-column="54" selection-end-line="230" selection-end-column="75" />
+          <folding>
+            <element signature="e#0#22374#0" expanded="true" />
+            <element signature="imports" expanded="true" />
+            <marker date="1471944111000" expanded="false" signature="8339:10385" placeholder="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Application/src/main/res/layout/activity_splash.xml">
+      <provider selected="true" editor-type-id="android-designer">
+        <state />
+      </provider>
+      <provider editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="10" column="34" selection-start-line="10" selection-start-column="34" selection-end-line="10" selection-end-column="34" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Application/src/main/res/layout/characteristic_majorminor.xml">
+      <provider editor-type-id="android-designer">
+        <state />
+      </provider>
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-0.2195122">
+          <caret line="32" column="36" selection-start-line="32" selection-start-column="36" selection-end-line="32" selection-end-column="36" />
+          <folding>
+            <element signature="e#1291#1313#0" expanded="true" />
+            <element signature="e#1936#1957#0" expanded="true" />
+            <element signature="e#1997#2018#0" expanded="true" />
+            <element signature="e#2507#2528#0" expanded="true" />
+            <element signature="e#2568#2589#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Application/src/main/res/layout/characteristic_name.xml">
+      <provider editor-type-id="android-designer">
+        <state />
+      </provider>
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.15243903">
+          <caret line="5" column="4" selection-start-line="5" selection-start-column="4" selection-end-line="8" selection-end-column="56" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Application/src/main/res/layout/characteristic_measurepower.xml">
+      <provider editor-type-id="android-designer">
+        <state />
+      </provider>
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.36178863">
+          <caret line="12" column="8" selection-start-line="12" selection-start-column="8" selection-end-line="12" selection-end-column="43" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Application/src/main/res/layout/characteristic_deploymode.xml">
+      <provider editor-type-id="android-designer">
+        <state />
+      </provider>
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.7865854">
+          <caret line="55" column="53" selection-start-line="55" selection-start-column="53" selection-end-line="55" selection-end-column="53" />
+          <folding>
+            <element signature="e#611#632#0" expanded="true" />
+            <element signature="e#670#691#0" expanded="true" />
+            <element signature="e#952#973#0" expanded="true" />
+            <element signature="e#1011#1032#0" expanded="true" />
+            <element signature="e#1472#1493#0" expanded="true" />
+            <element signature="e#1533#1554#0" expanded="true" />
+            <element signature="e#1938#1959#0" expanded="true" />
+            <element signature="e#1999#2020#0" expanded="true" />
           </folding>
         </state>
       </provider>
