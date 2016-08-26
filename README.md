@@ -1,4 +1,15 @@
 
+Pluslabbeacon
+=============
+
+This is the ibeacon management App for project ***Franckesche Stiftung Audio Guide***
+
+It can connect to iBeacon (Bluetooth Device) with Its BLE GATT Service, and then list all availabe items that is for this project relevant. And then give user the possibility to change these settings and save them.
+
+---
+
+***The following are the README.md from old example***
+
 Android BluetoothLeGatt Sample
 ===================================
 
